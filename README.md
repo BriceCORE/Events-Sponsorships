@@ -16,6 +16,7 @@ An organization-centered spending and sponsorship workspace. Start with K–12, 
 - Edit organization names, pictures, descriptions, websites, and contacts while preserving the underlying organization IDs and expense links.
 - **Events overview** provides a calendar and dated list, market/state/organization/decision filters, critical events in the next four weeks, participation decisions, manual invoice confirmations, planning checklists, and debriefs.
 - Every-two-weeks conference discovery monitors chosen organizer pages and puts findings in a source-linked review queue. Optional Brave search broadens discovery when configured. See [activation and coverage](docs/CONFERENCE-DISCOVERY.md).
+- Review and add historical conference suggestions together under **Conference tracking → Review & add conferences**. Names and known source pages are prefilled. Sourced selections are enabled; suggestions without sources remain saved and paused as **Needs source**. Tracked conferences persist across refreshes and show their latest published findings, dates, and pending reviews.
 
 ## Enable events, profiles, and applicable years
 
@@ -96,6 +97,7 @@ npm run test:adapter
 npm run test:states
 npm run test:planning
 npm run test:events
+npm run test:tracking
 npm run test:years
 npm run test:discovery
 npm run build

@@ -15,6 +15,7 @@
     "test:states": "node backend/test-states.mjs",
     "test:planning": "node backend/test-planning.mjs",
     "test:events": "node lib/event-dates.test.mjs",
+    "test:tracking": "node lib/conference-tracking.test.mjs",
     "test:years": "node lib/expense-years.test.mjs",
     "test:discovery": "python3 -B scripts/test-discover-conferences.py"
   },
