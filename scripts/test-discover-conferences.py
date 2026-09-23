@@ -56,6 +56,33 @@ class FakeDatabase:
         return {"data": self.data, "revision": 1, "role": "owner"}
 
 
+def queued_job():
+    return {"id": "request-fixture", "status": "running", "requestedAt": d.stamp(NOW),
+            "startedAt": d.stamp(NOW), "finishedAt": None, "message": "",
+            "pagesChecked": 0, "candidatesFound": 0, "runId": None,
+            "leaseUntil": d.stamp(NOW + dt.timedelta(minutes=35))}
+
+
+class FakeQueueDatabase(FakeDatabase):
+    def __init__(self, job=None, busy=False, cooldown=None, fail_on=None, failure=None, **kwargs):
+        super().__init__(**kwargs)
+        self.job, self.busy, self.cooldown = copy.deepcopy(job), busy, cooldown
+        self.fail_on, self.failure = fail_on, failure
+
+    def rpc(self, name, args):
+        self.calls.append((name, copy.deepcopy(args)))
+        if name == self.fail_on:
+            raise self.failure or d.DiscoveryError("database_request_failed_503")
+        if name == "core_claim_discovery_request":
+            return {"job": copy.deepcopy(self.job), "busy": self.busy, "cooldownUntil": self.cooldown}
+        if name == "core_finish_discovery_request":
+            self.job.update({"status": args["p_status"], "finishedAt": d.stamp(NOW),
+                             "runId": args["p_run_id"], "pagesChecked": args["p_pages_checked"],
+                             "candidatesFound": args["p_candidates_found"], "message": args["p_message"]})
+            return {"job": copy.deepcopy(self.job), "cooldownUntil": self.cooldown}
+        return {"data": self.data, "revision": 1, "role": "owner"}
+
+
 class DiscoveryTests(unittest.TestCase):
     def setUp(self):
         # A stray real network connection makes any test fail.
@@ -342,6 +369,197 @@ class DiscoveryTests(unittest.TestCase):
                 d.transport("http://example.org/events", "93.184.216.34", {}, limit=4)
         connect.assert_called_once_with(("93.184.216.34", 80), timeout=d.TIMEOUT)
         self.assertEqual(connection.request.call_args.kwargs["headers"]["Host"], "example.org")
+
+    def test_queue_claim_forces_due_and_finishes_with_the_saved_run(self):
+        db = FakeQueueDatabase(job=queued_job(), settings={"enabled": True, "intervalDays": 14, "nextRunAt": "2026-10-01T00:00:00Z"})
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(result["outcome"], "success")
+        self.assertEqual([name for name, _ in db.calls], ["core_claim_discovery_request", "core_discovery_context", "core_ingest_discoveries", "core_finish_discovery_request"])
+        saved_run = db.calls[-2][1]["p_run"]
+        finished = db.calls[-1][1]
+        self.assertEqual(finished["p_request_id"], "request-fixture")
+        self.assertEqual(finished["p_run_id"], saved_run["id"])
+        self.assertEqual(result["runId"], saved_run["id"])
+        self.assertEqual((finished["p_pages_checked"], finished["p_candidates_found"]), (1, 1))
+
+    def test_queue_busy_blocks_normal_and_admin_force_without_read_or_crawl(self):
+        for force in (False, True):
+            db, site = FakeQueueDatabase(busy=True), FakeSite()
+            result = d.execute(db, "fixture", NOW, force=force, fetcher=site.fetcher())
+            self.assertEqual(result["outcome"], "skipped_discovery_already_running")
+            self.assertEqual(len(db.calls), 1)
+            self.assertEqual(site.calls, [])
+
+    def test_empty_queue_falls_back_to_due_gate_and_cooldown_does_not_block_it(self):
+        for due in (False, True):
+            db = FakeQueueDatabase(cooldown=d.stamp(NOW + dt.timedelta(seconds=60)), settings={"enabled": True, "intervalDays": 14, "nextRunAt": "" if due else "2026-10-01T00:00:00Z"})
+            site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+            result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+            self.assertEqual(result["outcome"], "success" if due else "skipped_disabled_or_not_due")
+            self.assertFalse(any(name == "core_finish_discovery_request" for name, _ in db.calls))
+            self.assertEqual(bool(site.calls), due)
+
+    def test_claimed_request_cancels_after_pause_or_loss_of_source_watches(self):
+        for settings, watches in [({"enabled": False, "intervalDays": 14}, [WATCH]),
+                                  ({"enabled": True, "intervalDays": 14}, []),
+                                  ({"enabled": True, "intervalDays": 14}, [{**WATCH, "sourceUrls": []}])]:
+            db, site = FakeQueueDatabase(job=queued_job(), settings=settings, watches=watches), FakeSite()
+            result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+            self.assertEqual(result["outcome"], "cancelled")
+            finished = db.calls[-1][1]
+            self.assertEqual((finished["p_status"], finished["p_run_id"], finished["p_pages_checked"]), ("cancelled", None, 0))
+            self.assertEqual(site.calls, [])
+
+    def test_queue_records_failed_source_result_with_saved_run_id(self):
+        db = FakeQueueDatabase(job=queued_job())
+        site = FakeSite({"https://example.org/robots.txt": (503, {}, "private error")})
+        result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(result["outcome"], "failed")
+        self.assertEqual(db.calls[-1][1]["p_status"], "failed")
+        self.assertIsNotNone(db.calls[-1][1]["p_run_id"])
+        self.assertEqual(db.calls[-1][1]["p_pages_checked"], 1)
+
+    def test_queue_records_partial_result_with_saved_run_id(self):
+        db = FakeQueueDatabase(job=queued_job(), watches=[{**WATCH, "sourceUrls": ["https://example.org/events", "https://example.org/missing"]}])
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(result["outcome"], "partial")
+        self.assertEqual(db.calls[-1][1]["p_status"], "partial")
+        self.assertEqual(db.calls[-1][1]["p_candidates_found"], 1)
+
+    def test_worker_exception_finishes_failed_and_never_logs_private_error(self):
+        db = FakeQueueDatabase(job=queued_job(), fail_on="core_discovery_context", failure=RuntimeError("PRIVATE URL AND SECRET"))
+        with self.assertRaisesRegex(d.DiscoveryError, "^unexpected_discovery_error$"):
+            d.execute(db, "fixture", NOW, fetcher=FakeSite().fetcher())
+        finished = db.calls[-1][1]
+        self.assertEqual((finished["p_status"], finished["p_run_id"]), ("failed", None))
+        self.assertNotIn("PRIVATE", json.dumps(finished))
+
+    def test_ingest_failure_finishes_without_claiming_an_unconfirmed_run(self):
+        db = FakeQueueDatabase(job=queued_job(), fail_on="core_ingest_discoveries")
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        with self.assertRaisesRegex(d.DiscoveryError, "^database_request_failed_503$"):
+            d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(db.calls[-1][1]["p_status"], "failed")
+        self.assertIsNone(db.calls[-1][1]["p_run_id"])
+
+    def test_finish_failure_does_not_repeat_claim_crawl_or_ingest(self):
+        db = FakeQueueDatabase(job=queued_job(), fail_on="core_finish_discovery_request")
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        with self.assertRaisesRegex(d.DiscoveryError, "^discovery_request_status_update_failed$"):
+            d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        names = [name for name, _ in db.calls]
+        self.assertEqual(names.count("core_claim_discovery_request"), 1)
+        self.assertEqual(names.count("core_ingest_discoveries"), 1)
+        self.assertEqual(names.count("core_finish_discovery_request"), 2)
+
+    def test_finish_retries_identical_args_after_uncertain_response(self):
+        class OnceUncertain(FakeQueueDatabase):
+            def rpc(self, name, args):
+                if name == "core_finish_discovery_request" and not any(n == name for n, _ in self.calls):
+                    self.calls.append((name, copy.deepcopy(args)))
+                    raise d.DiscoveryError("public_fetch_failed")
+                return super().rpc(name, args)
+        db = OnceUncertain(job=queued_job())
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        finishes = [args for name, args in db.calls if name == "core_finish_discovery_request"]
+        self.assertEqual(result["outcome"], "success")
+        self.assertEqual(len(finishes), 2)
+        self.assertEqual(finishes[0], finishes[1])
+
+    def test_finish_auth_error_is_not_retried(self):
+        db = FakeQueueDatabase(job=queued_job(), fail_on="core_finish_discovery_request", failure=d.DiscoveryError("database_request_failed_401"))
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        with self.assertRaisesRegex(d.DiscoveryError, "^discovery_request_status_update_failed$"):
+            d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(sum(name == "core_finish_discovery_request" for name, _ in db.calls), 1)
+
+    def test_claim_created_after_process_start_has_valid_run_chronology(self):
+        request_time = NOW + dt.timedelta(seconds=1)
+        claim_time = NOW + dt.timedelta(seconds=2)
+        job = {**queued_job(), "requestedAt": d.stamp(request_time), "startedAt": d.stamp(claim_time)}
+        db = FakeQueueDatabase(job=job)
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        record = next(args["p_run"] for name, args in db.calls if name == "core_ingest_discoveries")
+        self.assertGreaterEqual(d.timestamp(record["startedAt"]), request_time)
+        self.assertEqual(d.timestamp(record["startedAt"]), claim_time)
+
+    def test_expired_claim_does_not_crawl_and_finishes_failed(self):
+        job = {**queued_job(), "leaseUntil": d.stamp(NOW - dt.timedelta(seconds=1))}
+        db, site = FakeQueueDatabase(job=job), FakeSite()
+        with self.assertRaisesRegex(d.DiscoveryError, "^discovery_request_lease_expired$"):
+            d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual(site.calls, [])
+        self.assertEqual(db.calls[-1][1]["p_status"], "failed")
+
+    def test_rpc_missing_queue_fallback_requires_exact_code_and_http_status(self):
+        base = "https://database.example.org/rest/v1/rpc/"
+        old = {"data": {"settings": {"enabled": False, "intervalDays": 14}}}
+        for status, body, fallback in [(404, {"code": "PGRST202", "message": "PRIVATE"}, True),
+                                       (401, {"code": "PGRST202"}, False),
+                                       (404, {"code": "PGRST205"}, False),
+                                       (403, {"code": "42501"}, False),
+                                       (404, "PGRST202", False)]:
+            site = FakeSite({base + "core_claim_discovery_request": (status, {}, json.dumps(body)), base + "core_discovery_context": (200, {}, json.dumps(old))})
+            db = d.Database("https://database.example.org", "sb_secret_TEST_ONLY", site.fetcher())
+            if fallback:
+                result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+                self.assertEqual(result["queue"], "not_installed")
+                self.assertEqual(result["outcome"], "skipped_disabled_or_not_due")
+            else:
+                with self.assertRaisesRegex(d.DiscoveryError, "^database_request_failed_"):
+                    d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+                self.assertEqual(len(site.calls), 1)
+
+    def test_rpc_queue_and_snapshot_envelopes_cannot_be_confused(self):
+        base = "https://database.example.org/rest/v1/rpc/"
+        good = {"job": queued_job(), "busy": False, "cooldownUntil": None}
+        for envelope in [good, {"job": None, "busy": True, "cooldownUntil": None}]:
+            site = FakeSite({base + "core_claim_discovery_request": (200, {}, json.dumps(envelope))})
+            result = d.Database("https://database.example.org", "sb_secret_TEST_ONLY", site.fetcher()).rpc("core_claim_discovery_request", {})
+            self.assertEqual(result, envelope)
+        invalid = [{"data": {}}, {"job": None, "cooldownUntil": None}, {**good, "busy": True},
+                   {**good, "job": {**queued_job(), "pagesChecked": True}},
+                   {**good, "job": {**queued_job(), "status": "queued"}},
+                   {**good, "job": {**queued_job(), "leaseUntil": None}}]
+        for envelope in invalid:
+            site = FakeSite({base + "core_claim_discovery_request": (200, {}, json.dumps(envelope))})
+            with self.assertRaisesRegex(d.DiscoveryError, "^invalid_database_response$"):
+                d.Database("https://database.example.org", "sb_secret_TEST_ONLY", site.fetcher()).rpc("core_claim_discovery_request", {})
+        site = FakeSite({base + "core_finish_discovery_request": (404, {}, json.dumps({"code": "PGRST202"}))})
+        with self.assertRaisesRegex(d.DiscoveryError, "^database_request_failed_404$"):
+            d.Database("https://database.example.org", "sb_secret_TEST_ONLY", site.fetcher()).rpc("core_finish_discovery_request", {"p_request_id": "request-fixture"})
+
+    def test_missing_queue_keeps_a_due_legacy_search_working(self):
+        db = FakeQueueDatabase(fail_on="core_claim_discovery_request", failure=d.QueueUnavailable("discovery_queue_not_installed"))
+        site = FakeSite({"https://example.org/events": (200, {"content-type": "text/html"}, fixture("labeled.html"))})
+        result = d.execute(db, "fixture", NOW, fetcher=site.fetcher())
+        self.assertEqual((result["outcome"], result["queue"]), ("success", "not_installed"))
+        self.assertEqual(sum(name == "core_ingest_discoveries" for name, _ in db.calls), 1)
+        self.assertFalse(any(name == "core_finish_discovery_request" for name, _ in db.calls))
+
+    def test_finish_envelope_accepts_postgres_offsets_and_matches_request(self):
+        endpoint = "https://database.example.org/rest/v1/rpc/core_finish_discovery_request"
+        finished = {**queued_job(), "status": "success", "runId": "run-fixture", "leaseUntil": None,
+                    "finishedAt": NOW.isoformat(), "requestedAt": NOW.isoformat(), "startedAt": NOW.isoformat()}
+        body = {"job": finished, "cooldownUntil": NOW.isoformat()}
+        site = FakeSite({endpoint: (200, {}, json.dumps(body))})
+        db = d.Database("https://database.example.org", "sb_secret_TEST_ONLY", site.fetcher())
+        self.assertEqual(db.rpc("core_finish_discovery_request", {"p_request_id": "request-fixture"}), body)
+        with self.assertRaisesRegex(d.DiscoveryError, "^invalid_database_response$"):
+            db.rpc("core_finish_discovery_request", {"p_request_id": "different-request"})
+
+    def test_main_logs_operational_counts_without_run_or_job_identifiers(self):
+        output = io.StringIO()
+        result = {"outcome": "success", "pagesChecked": 1, "candidatesFound": 1, "runId": "PRIVATE_RUN_IDENTIFIER", "job": "PRIVATE_JOB_IDENTIFIER", "queue": "processed"}
+        with patch.dict(os.environ, {"SUPABASE_SECRET_KEY": "sb_secret_TEST_ONLY", "SUPABASE_URL": "https://database.example.org"}, clear=True), patch.object(d, "execute", return_value=result), contextlib.redirect_stdout(output):
+            self.assertEqual(d.main(), 0)
+        self.assertIn('"pagesChecked": 1', output.getvalue())
+        self.assertNotIn("PRIVATE", output.getvalue())
+        self.assertNotIn("TEST_ONLY", output.getvalue())
 
 
 if __name__ == "__main__":

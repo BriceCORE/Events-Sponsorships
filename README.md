@@ -16,13 +16,14 @@ An organization-centered spending and sponsorship workspace. Start with K–12, 
 - Edit organization names, pictures, descriptions, websites, and contacts while preserving the underlying organization IDs and expense links.
 - **Events overview** provides a calendar and dated list, market/state/organization/decision filters, critical events in the next four weeks, participation decisions, manual invoice confirmations, planning checklists, and debriefs.
 - Every-two-weeks conference discovery monitors chosen organizer pages and puts findings in a source-linked review queue. Optional Brave search broadens discovery when configured. See [activation and coverage](docs/CONFERENCE-DISCOVERY.md).
+- **Check now** lets owners and editors request an earlier search directly from the app, with shared queue status and automatic results refresh. The worker checks for requests about every five minutes; GitHub scheduling delays can apply. Review a finding and save it as an event to place it in Overview.
 - Review and add historical conference suggestions together under **Conference tracking → Review & add conferences**. Names and known source pages are prefilled. Sourced selections are enabled; suggestions without sources remain saved and paused as **Needs source**. Tracked conferences persist across refreshes and show their latest published findings, dates, and pending reviews.
 
 ## Enable events, profiles, and applicable years
 
 Existing installations only need to run [backend/planning.sql](backend/planning.sql) after their original database setup. The additive migration preserves the spending ledger and stores planning, profile, and year edits separately. Owners and editors can approve participation and make these edits; viewers can read them. Until this update is installed, spending remains available and the new features show a setup message.
 
-For scheduled research, save `SUPABASE_SECRET_KEY` in GitHub Actions secrets, enable conference watches and the schedule in **Events overview → Conference tracking**, and run the discovery workflow once. Secret keys are never browser settings. The [discovery setup guide](docs/CONFERENCE-DISCOVERY.md) covers activation, optional broader search, run history, and scheduling limits.
+For scheduled research, save `SUPABASE_SECRET_KEY` in GitHub Actions secrets and enable conference watches and the schedule in **Events overview → Conference tracking**. To enable in-app requests, run the additional [backend/discovery-requests.sql](backend/discovery-requests.sql) migration once, then select **Check now**. Existing scheduled discovery continues before this addition is installed. Secret keys are never browser settings. The [discovery setup guide](docs/CONFERENCE-DISCOVERY.md) covers activation, optional broader search, run history, and scheduling limits.
 
 Use **Spending backup** for the original ledger and **Planning backup** for organization profiles, applicable-year adjustments, events, watches, and research history. A replacement ledger must preserve IDs referenced by planning. Event budgets and manually confirmed invoices do not automatically post expenses into the original ledger.
 
@@ -100,6 +101,8 @@ npm run test:events
 npm run test:tracking
 npm run test:years
 npm run test:discovery
+npm run test:discovery-requests
+npm run test:discovery-client
 npm run build
 ```
 
@@ -109,6 +112,6 @@ Database tests run in an in-memory PostgreSQL engine; no live account is require
 node backend/test-database.mjs /path/to/private-workspace.json
 ```
 
-The app was checked locally for desktop/mobile layout, applicable-year changes, organization pictures and profiles, event planning, stale drafts, viewer access, expense splitting, and the production build. Browser checks use synthetic records and intercept database calls. The owner has applied both database migrations to the hosted Supabase project. Invitations, password recovery, real concurrent user sessions, and the first scheduled discovery run still require hosted verification. See [verification details](docs/VERIFICATION.md).
+The app was checked locally for desktop/mobile layout, applicable-year changes, organization pictures and profiles, event planning, stale drafts, viewer access, expense splitting, and the production build. Browser checks use synthetic records and intercept database calls. The shared database and planning migrations are installed, and a live conference search has saved findings confirmed by the owner. The Check now queue uses a separate additive migration. Invitations, password recovery, and real concurrent user sessions still require hosted verification. See [verification details](docs/VERIFICATION.md).
 
 Brand and logo provenance is documented in `docs/BRAND-AND-ASSETS.md` and `docs/logo-sources.json`. Third-party logos identify their respective organizations and do not imply endorsement.

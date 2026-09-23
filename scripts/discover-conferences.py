@@ -43,6 +43,10 @@ class DiscoveryError(Exception):
     """Only fixed, non-private error codes may reach logs."""
 
 
+class QueueUnavailable(DiscoveryError):
+    """The additive queue migration is not installed; legacy discovery may continue."""
+
+
 def stamp(now=None):
     return (now or dt.datetime.now(UTC)).astimezone(UTC).isoformat().replace("+00:00", "Z")
 
@@ -696,7 +700,9 @@ class Database:
         self.fetcher = fetcher or PublicFetcher()
 
     def rpc(self, name, args):
-        if name not in {"core_discovery_context", "core_ingest_discoveries"}:
+        planning_ops = {"core_discovery_context", "core_ingest_discoveries"}
+        queue_ops = {"core_claim_discovery_request", "core_finish_discovery_request"}
+        if name not in planning_ops | queue_ops:
             raise DiscoveryError("invalid_database_operation")
         headers = {"apikey": self.key, "Content-Type": "application/json", "Accept": "application/json"}
         # Modern sb_secret keys authenticate at the Supabase gateway. Legacy service-role JWTs
@@ -706,24 +712,85 @@ class Database:
         body = json.dumps(args, ensure_ascii=False).encode()
         response = self.fetcher._once(self.url.rstrip("/") + "/rest/v1/rpc/" + name, headers, "POST", body, 24 * 1024 * 1024)
         if response.status != 200:
+            # Only this precise PostgREST missing-function response permits the old
+            # schedule to run before the additive queue migration is installed.
+            # Authentication, gateway, malformed, and finish errors never use fallback.
+            if name == "core_claim_discovery_request" and response.status == 404:
+                try:
+                    error = json.loads(response.body)
+                    if isinstance(error, dict) and error.get("code") == "PGRST202":
+                        raise QueueUnavailable("discovery_queue_not_installed")
+                except (ValueError, TypeError):
+                    pass
             # Database bodies can contain private information; never log them or follow redirects.
             raise DiscoveryError("database_request_failed_" + str(response.status))
         try:
             value = json.loads(response.body)
-            if not isinstance(value, dict) or not isinstance(value.get("data"), dict):
+            if not isinstance(value, dict):
                 raise ValueError()
+            if name in planning_ops:
+                if not isinstance(value.get("data"), dict):
+                    raise ValueError()
+            else:
+                validate_queue_response(value, name, args)
             return value
-        except (ValueError, TypeError):
+        except (ValueError, TypeError, DiscoveryError):
             raise DiscoveryError("invalid_database_response") from None
 
 
-def run(database, workspace_id, now=None, force=False, search_key="", fetcher=None):
+def validate_queue_response(value, operation, args):
+    """Validate the job envelope separately from a planning snapshot."""
+    def text_field(item, field, limit, nullable=False):
+        text = item[field]
+        if text is None and nullable:
+            return
+        if not isinstance(text, str) or len(text.encode("utf-16-le", "surrogatepass")) // 2 > limit:
+            raise ValueError()
+
+    def time_field(item, field, nullable=False):
+        text_field(item, field, 40, nullable)
+        if item[field] is not None:
+            timestamp(item[field])
+
+    try:
+        time_field(value, "cooldownUntil", nullable=True)
+        job = value["job"]
+        claiming = operation == "core_claim_discovery_request"
+        if claiming and type(value["busy"]) is not bool:
+            raise ValueError()
+        if job is None:
+            if not claiming:
+                raise ValueError()
+            return
+        if not isinstance(job, dict):
+            raise ValueError()
+        text_field(job, "id", 200)
+        text_field(job, "message", 4000)
+        text_field(job, "runId", 200, nullable=True)
+        if not job["id"] or (job["runId"] is not None and not job["runId"]):
+            raise ValueError()
+        time_field(job, "requestedAt")
+        for field in ("startedAt", "finishedAt", "leaseUntil"):
+            time_field(job, field, nullable=True)
+        for field in ("pagesChecked", "candidatesFound"):
+            if type(job[field]) is not int or not 0 <= job[field] <= 100000:
+                raise ValueError()
+        if claiming:
+            if value["busy"] or job["status"] != "running" or job["startedAt"] is None or job["leaseUntil"] is None:
+                raise ValueError()
+        elif job["status"] not in {"success", "partial", "failed", "cancelled"} or job["id"] != args["p_request_id"]:
+            raise ValueError()
+    except (KeyError, UnicodeError):
+        raise ValueError() from None
+
+
+def run(database, workspace_id, now=None, force=False, search_key="", fetcher=None, require_sources=False):
     now = now or dt.datetime.now(UTC)
     snapshot = database.rpc("core_discovery_context", {"p_workspace_id": workspace_id})
     data = snapshot["data"]
     if not is_due(data.get("settings", {}), now, force):
         return {"outcome": "skipped_disabled_or_not_due"}
-    watches = [w for w in data.get("watches", []) if w.get("enabled")]
+    watches = [w for w in data.get("watches", []) if w.get("enabled") and (not require_sources or w.get("sourceUrls"))]
     if not watches:
         return {"outcome": "skipped_no_enabled_watches"}
     budget, fetcher = Budget(), fetcher or PublicFetcher()
@@ -758,7 +825,78 @@ def run(database, workspace_id, now=None, force=False, search_key="", fetcher=No
     record = {"id": "run-" + str(uuid.uuid4()), "startedAt": stamp(now), "finishedAt": stamp(), "status": status, "pagesChecked": checked, "candidatesFound": len(candidates), "message": message}
     # The database deduplicates and preserves reviews, decisions, invoices, tasks and event plans.
     database.rpc("core_ingest_discoveries", {"p_workspace_id": workspace_id, "p_candidates": candidates, "p_run": record})
-    return {"outcome": status, "pagesChecked": checked, "candidatesFound": len(candidates), "issues": failures}
+    return {"outcome": status, "pagesChecked": checked, "candidatesFound": len(candidates), "issues": failures, "runId": record["id"]}
+
+
+def finish_request(database, workspace_id, job, status, result=None, message=""):
+    result = result or {}
+    args = {
+        "p_workspace_id": workspace_id, "p_request_id": job["id"], "p_status": status,
+        "p_run_id": result.get("runId"), "p_pages_checked": result.get("pagesChecked", 0),
+        "p_candidates_found": result.get("candidatesFound", 0), "p_message": clean(message, 4000),
+    }
+    for attempt in range(2):
+        try:
+            return database.rpc("core_finish_discovery_request", args)
+        except DiscoveryError as error:
+            code = str(error)
+            transient = code in {"public_fetch_failed", "request_time_limit"} or bool(re.fullmatch(r"database_request_failed_5\d\d", code))
+            if attempt or not transient:
+                raise
+            # Finish is idempotent for the same request and arguments, so one
+            # uncertain transport/5xx response can be retried without recrawling.
+
+
+def execute(database, workspace_id, now=None, force=False, search_key="", fetcher=None):
+    """Claim at most one manual request, otherwise apply the existing 14-day gate."""
+    now = now or dt.datetime.now(UTC)
+    try:
+        queue = database.rpc("core_claim_discovery_request", {"p_workspace_id": workspace_id})
+    except QueueUnavailable:
+        result = run(database, workspace_id, now, force, search_key, fetcher)
+        return {**result, "queue": "not_installed"}
+    # Another worker owns a 35-minute lease. Even an administrator's forced
+    # workflow must not start an overlapping crawl. The 60-second request
+    # cooldown is separate and does not suppress a normally due scheduled run.
+    if queue["busy"]:
+        return {"outcome": "skipped_discovery_already_running"}
+    job = queue["job"]
+    if job is None:
+        return run(database, workspace_id, now, force, search_key, fetcher)
+    try:
+        if timestamp(job["leaseUntil"]) <= now:
+            raise DiscoveryError("discovery_request_lease_expired")
+        # A request can be created after this process starts but before claim
+        # commits. Bind the recorded run time to the server's request/claim time.
+        run_now = max(now, timestamp(job["requestedAt"]), timestamp(job["startedAt"]))
+        result = run(database, workspace_id, run_now, True, search_key, fetcher, require_sources=True)
+    except Exception as error:
+        # No stored run was returned. A failed claim is never retried, and a
+        # failed crawl is never automatically started again by this worker.
+        try:
+            finish_request(database, workspace_id, job, "failed", message="The worker stopped before it could confirm a saved search result. Review setup and source availability, then request another check.")
+        except Exception:
+            raise DiscoveryError("discovery_request_failed_and_status_update_failed") from None
+        if isinstance(error, DiscoveryError):
+            raise error
+        raise DiscoveryError("unexpected_discovery_error") from None
+    status = result["outcome"]
+    if status.startswith("skipped_"):
+        status = "cancelled"
+        message = "The requested check was cancelled because tracking is paused or no enabled conference has an official source page."
+    else:
+        message = "The requested check completed; source details and results are available in search history."
+        if status == "partial":
+            message = "The requested check completed with source or search issues. Review search history and any new suggestions."
+        elif status == "failed":
+            message = "The requested check could not retrieve a usable source page. Review the official source links and search history before retrying."
+    try:
+        finish_request(database, workspace_id, job, status, result, message)
+    except Exception:
+        # A run may already be stored. Do not recrawl or claim success when the
+        # request's final status could not be confirmed; its lease will expire.
+        raise DiscoveryError("discovery_request_status_update_failed") from None
+    return {**result, "outcome": status, "queue": "processed"}
 
 
 def main():
@@ -771,9 +909,10 @@ def main():
         print("FAILED: SUPABASE_URL is not configured; no discovery was attempted.")
         return 1
     try:
-        result = run(Database(url, secret), os.environ.get("CORE_WORKSPACE_ID", "core-midwest"), force=os.environ.get("DISCOVERY_FORCE", "false").lower() == "true", search_key=os.environ.get("BRAVE_SEARCH_API_KEY", ""))
+        result = execute(Database(url, secret), os.environ.get("CORE_WORKSPACE_ID", "core-midwest"), force=os.environ.get("DISCOVERY_FORCE", "false").lower() == "true", search_key=os.environ.get("BRAVE_SEARCH_API_KEY", ""))
         # Only operational counts are public; names, URLs, candidates, RPC bodies and secrets are not.
-        print("Conference discovery: " + json.dumps(result, sort_keys=True))
+        public_result = {key: result[key] for key in ("outcome", "pagesChecked", "candidatesFound", "issues", "queue") if key in result}
+        print("Conference discovery: " + json.dumps(public_result, sort_keys=True))
         return 1 if result["outcome"] == "failed" else 0
     except DiscoveryError as error:
         print("FAILED: " + str(error) + ". No response bodies or private workspace data were logged.")

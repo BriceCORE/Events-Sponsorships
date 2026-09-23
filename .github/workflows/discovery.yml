@@ -2,8 +2,8 @@ name: Discover conferences for review
 
 on:
   schedule:
-    # A daily wake checks the database's 14-day due date; it does not crawl every day.
-    - cron: '17 7 * * *'
+    # Poll for in-app requests; otherwise crawl only when the 14-day due date arrives.
+    - cron: '2-59/5 * * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -32,7 +32,7 @@ jobs:
           persist-credentials: false
       - name: Verify discovery fixtures without network access
         run: python3 scripts/test-discover-conferences.py
-      - name: Check the two-week schedule and collect suggestions
+      - name: Process a requested check or the two-week schedule
         env:
           SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL || 'https://opmirvbaomwsjhfpheeg.supabase.co' }}
           CORE_WORKSPACE_ID: ${{ vars.VITE_WORKSPACE_ID || 'core-midwest' }}

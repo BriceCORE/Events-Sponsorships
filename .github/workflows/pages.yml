@@ -29,6 +29,8 @@ jobs:
       - run: npm run test:planning
       - run: npm run test:events
       - run: npm run test:tracking
+      - run: npm run test:discovery-requests
+      - run: npm run test:discovery-client
       - run: npm run test:years
       - run: npm run test:discovery
       - name: Build shared workspace
