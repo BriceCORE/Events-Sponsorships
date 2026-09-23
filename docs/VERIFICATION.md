@@ -1,6 +1,7 @@
 # Handoff verification — September 22, 2026
 
 - Production TypeScript check and Vite build passed.
+- State filtering and State A–Z sorting passed eight focused checks plus browser checks with synthetic records covering market/year intersections, mixed-case and missing states, multi-state organizations, split expenses, filtered CSV totals, and desktop/mobile layouts. Browser checks intercept database requests and do not modify the shared workspace.
 - 65 database checks passed using a synthetic fixture, plus a full private-workspace round trip (66 with the optional fixture).
 - 27 shared-client checks passed with networking blocked, including permissions, stale benefit drafts, payment revisions, no-op saves, import revision conflicts, overlapping requests, and delayed replies after sign-out.
 - Browser checks passed for CORE Midwest identity, filtered spending calculations, organization selection, split-allocation controls, over-assignment prevention, benefit display, and desktop/mobile layout. No browser errors or page-level mobile overflow were found.

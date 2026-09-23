@@ -25,6 +25,7 @@ jobs:
       - run: npm ci
       - run: npm run test:database
       - run: npm run test:adapter
+      - run: npm run test:states
       - name: Build shared workspace
         env:
           # Public browser configuration. Repository variables can override it.

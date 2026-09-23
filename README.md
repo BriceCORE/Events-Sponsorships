@@ -11,6 +11,7 @@ An organization-centered spending and sponsorship workspace. Start with K–12, 
 - Organization logos downloaded from their official websites, with provenance in `docs/logo-sources.json`. Logos retain their proportions. Related organization/program marks are identified in the app; unresolved identities use initials.
 - Market and year filters, organization totals, expense search, dollar assignments and splits, corrected amounts, review notes, researched benefit packages, utilization notes, CSV export, and workspace backups.
 - Shared workspace with owner/editor/viewer roles, protected database access, validated saves, and conflict detection.
+- Filter by state alongside market and year, sort organizations by state, and export the filtered totals with state columns. State filtering uses the state recorded on each expense; organizations without spending use their listed states. Entries with missing state information remain available under **State not recorded**.
 
 The initial data file is supplied **separately** as `CORE-Midwest-initial.core-workspace.json`. Keep that file outside this repository. Import it through the app after signing in as the owner. No spending ledger or private financial seed is embedded in the public app.
 
