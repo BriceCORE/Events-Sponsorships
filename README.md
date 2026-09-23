@@ -12,6 +12,18 @@ An organization-centered spending and sponsorship workspace. Start with K–12, 
 - Market and year filters, organization totals, expense search, dollar assignments and splits, corrected amounts, review notes, researched benefit packages, utilization notes, CSV export, and workspace backups.
 - Shared workspace with owner/editor/viewer roles, protected database access, validated saves, and conflict detection.
 - Filter by state alongside market and year, sort organizations by state, and export the filtered totals with state columns. State filtering uses the state recorded on each expense; organizations without spending use their listed states. Entries with missing state information remain available under **State not recorded**.
+- Edit each expense's **Applicable year** without changing its original cost/approval date or amount. The default year filter uses applicable years, the expense table sorts by them, and organization profiles show yearly assigned-cost totals.
+- Edit organization names, pictures, descriptions, websites, and contacts while preserving the underlying organization IDs and expense links.
+- **Events overview** provides a calendar and dated list, market/state/organization/decision filters, critical events in the next four weeks, participation decisions, manual invoice confirmations, planning checklists, and debriefs.
+- Every-two-weeks conference discovery monitors chosen organizer pages and puts findings in a source-linked review queue. Optional Brave search broadens discovery when configured. See [activation and coverage](docs/CONFERENCE-DISCOVERY.md).
+
+## Enable events, profiles, and applicable years
+
+Existing installations only need to run [backend/planning.sql](backend/planning.sql) after their original database setup. The additive migration preserves the spending ledger and stores planning, profile, and year edits separately. Owners and editors can approve participation and make these edits; viewers can read them. Until this update is installed, spending remains available and the new features show a setup message.
+
+For scheduled research, save `SUPABASE_SECRET_KEY` in GitHub Actions secrets, enable conference watches and the schedule in **Events overview → Conference tracking**, and run the discovery workflow once. Secret keys are never browser settings. The [discovery setup guide](docs/CONFERENCE-DISCOVERY.md) covers activation, optional broader search, run history, and scheduling limits.
+
+Use **Spending backup** for the original ledger and **Planning backup** for organization profiles, applicable-year adjustments, events, watches, and research history. A replacement ledger must preserve IDs referenced by planning. Event budgets and manually confirmed invoices do not automatically post expenses into the original ledger.
 
 The initial data file is supplied **separately** as `CORE-Midwest-initial.core-workspace.json`. Keep that file outside this repository. Import it through the app after signing in as the owner. No spending ledger or private financial seed is embedded in the public app.
 
@@ -71,7 +83,7 @@ The original local demonstration can optionally run with `VITE_LOCAL_PREVIEW=tru
 
 ## Interpreting the data
 
-Recorded spending comes from the supplied tracker and saved corrections; it is not proof of settlement. Market filtering follows each expense's classification. Event year uses the first event/membership year identified in its description; approval year is available separately. Unknown amounts remain unknown. Suggested organization assignments can be corrected or split without increasing the expense total.
+Recorded spending comes from the supplied tracker and saved corrections; it is not proof of settlement. Market filtering follows each expense's classification. Applicable year starts with the first event/membership year identified in the description and can be corrected separately; the original cost/approval date and approval year stay preserved. Unknown amounts remain unknown. Suggested organization assignments can be corrected or split without increasing the expense total.
 
 Benefit package descriptions retain organizer source links, evidence limits and applicability years. Potential value is an opportunity to assess; it is not measured financial ROI. A published benefit does not prove that CORE Midwest purchased or used it. Package reference prices are not added to spending totals.
 
@@ -81,6 +93,11 @@ Benefit package descriptions retain organizer source links, evidence limits and 
 npm run check
 npm run test:database
 npm run test:adapter
+npm run test:states
+npm run test:planning
+npm run test:events
+npm run test:years
+npm run test:discovery
 npm run build
 ```
 
@@ -90,6 +107,6 @@ Database tests run in an in-memory PostgreSQL engine; no live account is require
 node backend/test-database.mjs /path/to/private-workspace.json
 ```
 
-The handoff was checked locally for desktop/mobile layout, the full source data, expense splitting and the production build. A hosted Supabase project and email service were not provisioned in this handoff. After setup, verify invitations, password recovery, access roles, and two users saving stale drafts against the real shared project.
+The app was checked locally for desktop/mobile layout, applicable-year changes, organization pictures and profiles, event planning, stale drafts, viewer access, expense splitting, and the production build. Browser checks use synthetic records and intercept database calls. The owner has applied both database migrations to the hosted Supabase project. Invitations, password recovery, real concurrent user sessions, and the first scheduled discovery run still require hosted verification. See [verification details](docs/VERIFICATION.md).
 
 Brand and logo provenance is documented in `docs/BRAND-AND-ASSETS.md` and `docs/logo-sources.json`. Third-party logos identify their respective organizations and do not imply endorsement.

@@ -1,0 +1,42 @@
+name: Discover conferences for review
+
+on:
+  schedule:
+    # A daily wake checks the database's 14-day due date; it does not crawl every day.
+    - cron: '17 7 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run before the due date (discovery must still be enabled in the app)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: core-conference-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Verify discovery fixtures without network access
+        run: python3 scripts/test-discover-conferences.py
+      - name: Check the two-week schedule and collect suggestions
+        env:
+          SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL || 'https://opmirvbaomwsjhfpheeg.supabase.co' }}
+          CORE_WORKSPACE_ID: ${{ vars.VITE_WORKSPACE_ID || 'core-midwest' }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          DISCOVERY_FORCE: ${{ inputs.force == true && 'true' || 'false' }}
+        run: python3 scripts/discover-conferences.py

@@ -21,4 +21,5 @@ export function validateReview(input:unknown,payment:Payment,orgIds:Set<string>)
   return {sector:x.sector.trim(),amountCents:amount as number|null,allocations,note:x.note.trim(),reviewed:x.reviewed===true,revision:Number(x.revision)};
 }
 export function unassigned(p:Payment){return (p.amountCents??0)-p.allocations.reduce((s,a)=>s+a.amountCents,0)}
-export function matchesPeriod(p:Payment,year:string,basis:string){return year==="all" || String(basis==="event"?p.eventYear:p.approvalYear)===(year==="unknown"?"null":year)}
+export function applicableYear(p:Payment){return p.applicableYear===undefined?p.eventYear:p.applicableYear}
+export function matchesPeriod(p:Payment,year:string,basis:string){return year==="all" || String(basis==="event"?applicableYear(p):p.approvalYear)===(year==="unknown"?"null":year)}
