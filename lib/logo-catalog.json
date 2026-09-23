@@ -1,0 +1,1802 @@
+{
+  "org-accelerate-indiana-municipalities-aim": {
+    "path": "organizations/org-accelerate-indiana-municipalities-aim.png",
+    "sourcePage": "https://aimindiana.org/",
+    "assetUrl": "https://aimindiana.org/wp-content/uploads/2016/11/logo_aim_white.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-afe-chicago-chapter": {
+    "path": "organizations/org-afe-chicago-chapter.png",
+    "sourcePage": "https://afe.org/content.aspx?club_id=244299&module_id=187660&page_id=22",
+    "assetUrl": "https://images.clubexpress.com/244299/graphics/Chicagoland_Blue_Logo_367584398.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-agc-central-illinois-builders": {
+    "path": "organizations/org-agc-central-illinois-builders.svg",
+    "sourcePage": "https://cibagc.org/",
+    "assetUrl": "https://cibagc.org/wp-content/uploads/2021/06/CIB-Logo.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-aia-northeast-illinois": {
+    "path": "organizations/org-aia-northeast-illinois.png",
+    "sourcePage": "https://www.aianei.org/",
+    "assetUrl": "https://www.aianei.org/assets/site/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-american-institute-of-architects-aia": {
+    "path": "organizations/org-american-institute-of-architects-aia.avif",
+    "sourcePage": "https://www.aia.org/",
+    "assetUrl": "https://www.aia.org/themes/custom/aia_theme/Aia-red-logo-rgb.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-american-red-cross": {
+    "path": "organizations/org-american-red-cross.png",
+    "sourcePage": "https://www.redcross.org/",
+    "assetUrl": "https://www.redcross.org/content/dam/redcross/red-cross-logos/new-red-cross-logo-en.png.img.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-association-for-facilities-engineering": {
+    "path": "organizations/org-association-for-facilities-engineering.png",
+    "sourcePage": "https://afe.clubexpress.com/content.aspx?page_id=0&club_id=244299",
+    "assetUrl": "https://images.clubexpress.com/244299/graphics/AFE_2024_Logo_Redesign_549202864.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-association-of-fundraising-professionals-central-il-chapter": {
+    "path": "organizations/org-association-of-fundraising-professionals-central-il-chapter.png",
+    "sourcePage": "https://community.afpglobal.org/afpcentralil/home",
+    "assetUrl": "https://higherlogicdownload.s3.amazonaws.com/AFPNET/0511346c-24e7-4c63-b04d-fa56e5aa4566/UploadedImages/IL2-200x166.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-ben-davis-high-school": {
+    "path": "organizations/org-ben-davis-high-school.svg",
+    "sourcePage": "https://bdhs.wayne.k12.in.us/",
+    "assetUrl": "https://resources.finalsite.net/images/v1685345022/waynek12inus/ujioihbyqhgioosi3xds/logo_seal_white.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": true,
+    "note": "Official MSD of Wayne Township district seal used on Ben Davis High School website; parent-district mark, not a separate school mascot."
+  },
+  "org-black-business-alliance-peoria-chapter-dba": {
+    "path": "organizations/org-black-business-alliance-peoria-chapter-dba.png",
+    "sourcePage": "https://www.bbapeoria.org/",
+    "assetUrl": "https://www.bbapeoria.org/wp-content/uploads/2018/09/BBA-Peoria-2018-1.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-bloomington-kiwanis-foundation": {
+    "path": "organizations/org-bloomington-kiwanis-foundation.png",
+    "sourcePage": "https://www.bloomingtonkiwanis.org/",
+    "assetUrl": "https://clubrunner.blob.core.windows.net/00000101903/ThemeLogos/en-us/DarkBG_kiwanis-removebg-preview.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Official Bloomington Kiwanis site uses the Kiwanis International mark; parent club mark, not a separate foundation logo."
+  },
+  "org-boys-girls-club-of-greater-northwest-indiana": {
+    "path": "organizations/org-boys-girls-club-of-greater-northwest-indiana.webp",
+    "sourcePage": "https://www.bgcgreaternwi.org/",
+    "assetUrl": "https://irp.cdn-website.com/cdfe47a4/dms3rep/multi/opt/top-logo-final-841c9e89-202w.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-boys-girls-clubs-of-greater-peoria": {
+    "path": "organizations/org-boys-girls-clubs-of-greater-peoria.png",
+    "sourcePage": "https://bgcpeoria.org/",
+    "assetUrl": "https://bgcpeoria.org/image/3/600",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Official Greater Peoria club site uses the national Boys & Girls Clubs symbol."
+  },
+  "org-bradley-university": {
+    "path": "organizations/org-bradley-university.svg",
+    "sourcePage": "https://www.bradley.edu/",
+    "assetUrl": "https://www.bradley.edu/wp-content/themes/bradley/images/logo-white-horiz.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-camp-big-sky": {
+    "path": "organizations/org-camp-big-sky.jpg",
+    "sourcePage": "https://campbigsky.org/",
+    "assetUrl": "https://campbigsky.org/wp-content/uploads/2020/02/camp_big_sky_logo.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-carle-health-center-for-philanthropy": {
+    "path": "organizations/org-carle-health-center-for-philanthropy.png",
+    "sourcePage": "https://carle.org/giving",
+    "assetUrl": "https://carle.org/build/images/global/carle_logo_red.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Carle Health parent mark on its official philanthropy page; no separate philanthropy mark verified."
+  },
+  "org-cedar-lake-parks-police-department": {
+    "path": "organizations/org-cedar-lake-parks-police-department.webp",
+    "sourcePage": "https://cedarlakein.gov/",
+    "assetUrl": "https://cedarlakein.gov/wp-content/uploads/2025/09/cropped-CL-Logo.webp",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Cedar Lake municipal mark from official website; source combines Parks and Police."
+  },
+  "org-center-for-prevention-of-abuse": {
+    "path": "organizations/org-center-for-prevention-of-abuse.png",
+    "sourcePage": "https://www.centerforpreventionofabuse.org/",
+    "assetUrl": "https://www.centerforpreventionofabuse.org/wp-content/uploads/2018/02/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-central-association-of-college-university-business-officers-cacubo": {
+    "path": "organizations/org-central-association-of-college-university-business-officers-cacubo.webp",
+    "sourcePage": "https://www.cacubo.org/",
+    "assetUrl": "https://www.cacubo.org/assets/site/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-central-illinois-down-syndrome-association-cidso": {
+    "path": "organizations/org-central-illinois-down-syndrome-association-cidso.png",
+    "sourcePage": "https://cidso.org/",
+    "assetUrl": "https://cidso.org/sites/default/files/CIDSO-logo-new.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-chatham-area-chamber-of-commerce": {
+    "path": "organizations/org-chatham-area-chamber-of-commerce.avif",
+    "sourcePage": "https://www.chatham-il-chamber.com/",
+    "assetUrl": "https://static.wixstatic.com/media/d4adf5_09a60b7b0e4f4eaa9e05ee861fa8d281~mv2.jpg/v1/fill/w_175,h_79,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Chamber%20logo%20940x534_edited.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-chatham-friends-of-the-parks": {
+    "path": "organizations/org-chatham-friends-of-the-parks.png",
+    "sourcePage": "https://www.chathampawsapalooza.com/",
+    "assetUrl": "https://www.chathampawsapalooza.com/wp-content/uploads/2021/08/Untitled-2.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Official Paws-a-Palooza event mark identifies Chatham Friends of the Parks."
+  },
+  "org-chicago-building-congress": {
+    "path": "organizations/org-chicago-building-congress.webp",
+    "sourcePage": "https://chicagobuildingcongress.org/",
+    "assetUrl": "https://chicagobuildingcongress.org/wp-content/uploads/2017/08/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-chicago-state-foundation": {
+    "path": "organizations/org-chicago-state-foundation.svg",
+    "sourcePage": "https://csu.edu/foundation/",
+    "assetUrl": "https://www.csu.edu/img/csuhome_white_logo.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": true,
+    "note": "Chicago State University parent mark on official Chicago State Foundation page."
+  },
+  "org-city-of-charlestown": {
+    "path": "organizations/org-city-of-charlestown.png",
+    "sourcePage": "https://www.cityofcharlestown.com/",
+    "assetUrl": "https://www.cityofcharlestown.com/ImageRepository/Document?documentId=66",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-city-of-columbia-city": {
+    "path": "organizations/org-city-of-columbia-city.gif",
+    "sourcePage": "https://columbiacity.net/",
+    "assetUrl": "https://columbiacity.net/wp-content/uploads/2015/04/columbia_city_logo-e1429725001784.gif",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-city-of-crown-point": {
+    "path": "organizations/org-city-of-crown-point.png",
+    "sourcePage": "https://www.crownpoint.in.gov/",
+    "assetUrl": "https://www.crownpoint.in.gov/ImageRepository/Document?documentID=2084",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-city-of-hammond": {
+    "path": "organizations/org-city-of-hammond.png",
+    "sourcePage": "https://www.gohammond.com/",
+    "assetUrl": "https://www.gohammond.com/wp-content/uploads/2024/09/city_logo_293x293_3D.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-city-of-lockport": {
+    "path": "organizations/org-city-of-lockport.ico",
+    "sourcePage": "https://www.cityoflockport.net/",
+    "assetUrl": "https://www.cityoflockport.net/images/favicon.ico",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-city-of-normal-rotary": {
+    "path": "organizations/org-city-of-normal-rotary.png",
+    "sourcePage": "https://normalrotary.org/",
+    "assetUrl": "https://normalrotary.org/wp-content/uploads/2023/08/Header-Logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-community-healthcare-clinic": {
+    "path": "organizations/org-community-healthcare-clinic.webp",
+    "sourcePage": "https://chcchealth.org/",
+    "assetUrl": "https://chcchealth.org/wp-content/uploads/2023/02/chcc-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-construction-advancement-foundation": {
+    "path": "organizations/org-construction-advancement-foundation.png",
+    "sourcePage": "https://cafnwin.org/",
+    "assetUrl": "https://cafnwin.org/images/navLogo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-construction-angels-inc": {
+    "path": "organizations/org-construction-angels-inc.png",
+    "sourcePage": "https://www.constructionangels.us/",
+    "assetUrl": "https://www.constructionangels.us/wp-content/uploads/2016/05/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-crossroads-chamber": {
+    "path": "organizations/org-crossroads-chamber.svg",
+    "sourcePage": "https://crossroadschamber.org/",
+    "assetUrl": "https://crossroadschamber.org/wp-content/uploads/Crossroads-Primary-Logo-Color.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-crossroads-ymca": {
+    "path": "organizations/org-crossroads-ymca.png",
+    "sourcePage": "https://crymca.org/",
+    "assetUrl": "https://crymca.org/images/template/YLogo-sm-white.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": true,
+    "note": "YMCA parent mark from the official Crossroads YMCA site."
+  },
+  "org-crown-point-cal-ripken-baseball": {
+    "path": "organizations/org-crown-point-cal-ripken-baseball.png",
+    "sourcePage": "https://cpcalripken.sportngin.com/",
+    "assetUrl": "https://cdn1.sportngin.com/attachments/contact/a37c-178830051/CPLogo_no_border.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-cte-peter-land-mayor-land-crown-point": {
+    "path": "organizations/org-cte-peter-land-mayor-land-crown-point.webp",
+    "sourcePage": "https://peteland4mayor.com/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/62c5eabe56c2112535022bdb/4d84f486-e07b-49aa-8a50-981d4597a7e8/pete-land-re-elect-logo-color.png?format=1500w",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-downtown-development-corporation-of-peoria": {
+    "path": "organizations/org-downtown-development-corporation-of-peoria.avif",
+    "sourcePage": "https://www.downtownpeoria.us/",
+    "assetUrl": "https://static.wixstatic.com/media/f37c16_64a773dfca4046289f3f90d66fe4cd96~mv2.png/v1/fill/w_269,h_113,al_c,lg_1,q_85,enc_avif,quality_auto/DDC-logo_black_transparent.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-dupage-mayors-and-managers-conference": {
+    "path": "organizations/org-dupage-mayors-and-managers-conference.png",
+    "sourcePage": "https://dmmc-cog.org/",
+    "assetUrl": "https://dmmc-cog.org/wp-content/uploads/2024/06/cropped-DMMC_Logo_Primary1_Vert-1-180x180.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-dvi-charitable-foundation": {
+    "path": "organizations/org-dvi-charitable-foundation.webp",
+    "sourcePage": "https://dviinc.com/",
+    "assetUrl": "https://dviinc.com/wp-content/uploads/2025/06/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "David Vaughan Investments parent mark; its official publications verify the DVI Charitable Foundation Corporate Challenge."
+  },
+  "org-east-central-illinois-building-construction-trades-council": {
+    "path": "organizations/org-east-central-illinois-building-construction-trades-council.png",
+    "sourcePage": "https://www.builtunion.com/",
+    "assetUrl": "https://www.builtunion.com/wp-content/uploads/2021/05/BuiltUnion.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-east-peoria-chamber-of-commerce": {
+    "path": "organizations/org-east-peoria-chamber-of-commerce.png",
+    "sourcePage": "https://www.epcc.org/",
+    "assetUrl": "https://growthzonecmsprodeastus.azureedge.net/sites/2726/2017/09/2024_EPCC_Logo_Transparent-900.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-eastern-illinois-university": {
+    "path": "organizations/org-eastern-illinois-university.png",
+    "sourcePage": "https://www.eiu.edu/",
+    "assetUrl": "https://www.eiu.edu/_eiu15/images/universal/header_logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-easterseals-central-illinois": {
+    "path": "organizations/org-easterseals-central-illinois.svg",
+    "sourcePage": "https://ci.easterseals.com/",
+    "assetUrl": "https://ci.easterseals.com/themes/custom/jumpstart/images/logos/es-cil.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-eureka-college-baseball": {
+    "path": "organizations/org-eureka-college-baseball.png",
+    "sourcePage": "https://www.eurekareddevils.com/landing/index",
+    "assetUrl": "https://d2o2figo6ddd0g.cloudfront.net/l/z/mcrg5fdtzh3ral/Primary_Logo-0-3x.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-family-house": {
+    "path": "organizations/org-family-house.webp",
+    "sourcePage": "https://www.familyhousepeoria.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/5d5bf2161244af000130d326/1566307288030-LP4BU9MN3KC8S6S73Y7R/favicon.ico?format=100w",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-familycore": {
+    "path": "organizations/org-familycore.png",
+    "sourcePage": "https://www.familycore.org/",
+    "assetUrl": "https://www.familycore.org/wp-content/themes/family-core-2023/img/logo-125-v2.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-fbinaa-illinois-chapter": {
+    "path": "organizations/org-fbinaa-illinois-chapter.jpg",
+    "sourcePage": "https://fbinaa-illinois.org/",
+    "assetUrl": "https://fbinaa-illinois.org/wp-content/uploads/2016/09/fbi-na.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "FBINAA national association mark used by official Illinois chapter site."
+  },
+  "org-fbinaa-indiana-chapter": {
+    "path": "organizations/org-fbinaa-indiana-chapter.png",
+    "sourcePage": "https://fbinaaindiana.org/",
+    "assetUrl": "https://fbinaaindiana.org/wp-content/uploads/2024/01/Indiana-Chapter-logo_RGB_1000x1503.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-fdic-international": {
+    "path": "organizations/org-fdic-international.svg",
+    "sourcePage": "https://www.fdic.com/",
+    "assetUrl": "https://cdn.asp.events/CLIENT_CL_US_323E7AA7_5056_B733_8303D39C538813E0/sites/fdic2026/media/FDIC_intl-4c-date-location-2027.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "program",
+    "requiresDarkBackground": false,
+    "note": "Current official FDIC International event header; artwork includes 2027 dates and identifies the conference family."
+  },
+  "org-ferris-state-university": {
+    "path": "organizations/org-ferris-state-university.webp",
+    "sourcePage": "https://www.ferris.edu/",
+    "assetUrl": "https://www.ferris.edu/_resources20/images/logos/bulldog.webp",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-fire-inspectors-association-of-indiana": {
+    "path": "organizations/org-fire-inspectors-association-of-indiana.gif",
+    "sourcePage": "https://www.fiai.us/",
+    "assetUrl": "https://cdn.wildapricot.com/306410/resources/Pictures/FIAI%20LOGO%20HQ.gif?version=1774980927000&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLndpbGRhcHJpY290LmNvbS8zMDY0MTAvcmVzb3VyY2VzL1BpY3R1cmVzL0ZJQUklMjBMT0dPJTIwSFEuZ2lmP3ZlcnNpb249MTc3NDk4MDkyNzAwMCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5MjcxNDk0NH0sIklwQWRkcmVzcyI6eyJBV1M6U291cmNlSXAiOiIwLjAuMC4wLzAifX19XX0_&Signature=q4ihQX4WYtqdwYr7W~LyllgzbEiGKxGT3U900xXxN0M9QvYeA01CULsPxG~wcauvJjUOsPEsjiebENYZcJ~wSjo2Y5kv~kE~RCE-qLXhFhTVZbBTu~l-Q5IBEUDN6NE7oP~vKCidk6b~e8MPdCtVWndjrwWKLUoMArR7VobCQgnPMJyq3W5cVkqIjAXiADB6YU0T4M~qn7wkna7LTr4xOy5cvsQv0sgZweq4PBa0H6nLJl6XnimGyCPEJrUpQWXDc9sVpwu-WOHTbpOWdfR1fI777~o5UsRqJcV6xvqzWZibEyt474EYuFobqDJnoR43g4zmvni2f6OiWEh~7-tU1g__&Key-Pair-Id=K27MGQSHTHAGGF",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-first-united-methodist-church-of-crown-point": {
+    "path": "organizations/org-first-united-methodist-church-of-crown-point.png",
+    "sourcePage": "https://www.fumccp.org/",
+    "assetUrl": "https://dq5pwpg1q8ru0.cloudfront.net/2025/01/06/15/56/32/bea46458-4103-401d-9224-2e6b806c780f/LOGO_small.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-friends-of-treva-hodges": {
+    "path": "organizations/org-friends-of-treva-hodges.png",
+    "sourcePage": "https://www.mayortreva.com/",
+    "assetUrl": "https://static.wixstatic.com/media/b71e8d_de9459d394244cf1973439d2b885e3da%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/b71e8d_de9459d394244cf1973439d2b885e3da%7Emv2.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-great-plains-life-foundation": {
+    "path": "organizations/org-great-plains-life-foundation.avif",
+    "sourcePage": "https://www.stay4.org/",
+    "assetUrl": "https://static.wixstatic.com/media/05b9c3_a6a7509c358a455eb65a4d08df2cc277~mv2.png/v1/fill/w_77,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GPLifeLogo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-greater-lawrence-chamber-of-commerce-inc": {
+    "path": "organizations/org-greater-lawrence-chamber-of-commerce-inc.png",
+    "sourcePage": "https://www.greaterlawrencechamber.org/",
+    "assetUrl": "https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/3037/CMS/Logo/Chamber-Logo.Pantone-w1800.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-greater-peoria-contractors-suppliers-association-gpcsa": {
+    "path": "organizations/org-greater-peoria-contractors-suppliers-association-gpcsa.svg",
+    "sourcePage": "https://www.gpcsa.org/",
+    "assetUrl": "https://gpcsa.org/wp-content/themes/gpcsa-2022/images/logo-gpcsa.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-heart-of-illinois-united-way": {
+    "path": "organizations/org-heart-of-illinois-united-way.jpg",
+    "sourcePage": "https://www.hoiunitedway.org/",
+    "assetUrl": "https://www.hoiunitedway.org/wp-content/uploads/2023/10/HOIUW-logo-220.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-appa": {
+    "path": "organizations/org-illinois-appa.png",
+    "sourcePage": "https://ilappa.appa.org/",
+    "assetUrl": "https://ilappa.appa.org/wp-content/uploads/2024/12/ILAPPA-logo-sm-1.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-association-of-chiefs-of-police-ilacp": {
+    "path": "organizations/org-illinois-association-of-chiefs-of-police-ilacp.webp",
+    "sourcePage": "https://www.ilchiefs.org/",
+    "assetUrl": "https://www.ilchiefs.org/assets/site/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-city-county-management-association-ilcma": {
+    "path": "organizations/org-illinois-city-county-management-association-ilcma.png",
+    "sourcePage": "https://www.ilcma.org/",
+    "assetUrl": "https://www.ilcma.org/wp-content/themes/ilcma/assets/media/ios/touch-icon-76x76.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-illinois-community-college-chief-financial-officers-icccfo": {
+    "path": "organizations/org-illinois-community-college-chief-financial-officers-icccfo.png",
+    "sourcePage": "https://www.icccfo.org/",
+    "assetUrl": "https://www.icccfo.org/templates/g5_hydrogen/custom/images/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-fire-chiefs-association-ifca": {
+    "path": "organizations/org-illinois-fire-chiefs-association-ifca.png",
+    "sourcePage": "https://www.illinoisfirechiefs.org/aws/IFCA/pt/sp/home_page",
+    "assetUrl": "https://www.illinoisfirechiefs.org/aws/IFCA/am/gi/ifca-logo.png?ver=2",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-municipal-league": {
+    "path": "organizations/org-illinois-municipal-league.svg",
+    "sourcePage": "https://www.iml.org/",
+    "assetUrl": "https://www.iml.org/#official-inline-svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Official header SVG copied unchanged from source HTML."
+  },
+  "org-illinois-public-higher-education-cooperative-iphec": {
+    "path": "organizations/org-illinois-public-higher-education-cooperative-iphec.png",
+    "sourcePage": "https://www.iphec.org/",
+    "assetUrl": "https://www.iphec.org/images/logo-small.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-special-olympics": {
+    "path": "organizations/org-illinois-special-olympics.png",
+    "sourcePage": "https://www.soill.org/",
+    "assetUrl": "https://www.soill.org/wp-content/uploads/2024/08/SOILL_Logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-illinois-state-university": {
+    "path": "organizations/org-illinois-state-university.ico",
+    "sourcePage": "https://illinoisstate.edu/",
+    "assetUrl": "https://cdn.illinoisstate.edu/icons/favicon/reggie.ico",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-indiana-association-of-chiefs-of-police-iacp": {
+    "path": "organizations/org-indiana-association-of-chiefs-of-police-iacp.webp",
+    "sourcePage": "https://www.iacop.org/",
+    "assetUrl": "https://www.iacop.org/assets/site/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-indiana-business-journal": {
+    "path": "organizations/org-indiana-business-journal.png",
+    "sourcePage": "https://www.ibj.com/events/2026/innovate-northwest-indiana-valparaiso",
+    "assetUrl": "https://www.ibj.com/wp-content/themes/ibj/images/ibj-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-indiana-construction-roundtable-icr": {
+    "path": "organizations/org-indiana-construction-roundtable-icr.png",
+    "sourcePage": "https://indianaconstruction.org/",
+    "assetUrl": "https://indianaconstruction.org/wp-content/themes/icr_v1/assets/images/common/icr-logo-outline.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-indiana-economic-development-association": {
+    "path": "organizations/org-indiana-economic-development-association.png",
+    "sourcePage": "https://www.ieda.org/",
+    "assetUrl": "https://cdn.wildapricot.com/65505/resources/Pictures/2025%20Logos/IEDA_Logos_ieda_3colors_wordmark.png?version=1758826739000&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLndpbGRhcHJpY290LmNvbS82NTUwNS9yZXNvdXJjZXMvUGljdHVyZXMvMjAyNSUyMExvZ29zL0lFREFfTG9nb3NfaWVkYV8zY29sb3JzX3dvcmRtYXJrLnBuZz92ZXJzaW9uPTE3NTg4MjY3MzkwMDAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTI3MDI2NDd9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiMC4wLjAuMC8wIn19fV19&Signature=B-O-XTNqgrF6BqrBA0voFjqUmeh1ymrxsHyyIZ0v4PZAESAz96YvQ3jN2p1Hhp5pZrlgoaB6ZA7uopcqLD-NYAfJ3FQX3iHM7cv-h27ak95ZIPeEByH4cHs01i8kT1hWbzKrLxMGquJl1lJdkq9TH6z8iQafbV8~meqos-X3ueBqpSxaA2IdLlzdt~yHbWYt7Ke45fTBI74JsqDhexFu-u~nGcwHslxu-YZ-PuJvd31cFrU3CxYf3GXngt7CII0OTFhdZob63g8ow8zHygFBPRaDADFxEZunRYNunzbpxasJfIhc4-DwojmiCus1KAF89PQwS30S5xDivylV-DgMqA__&Key-Pair-Id=K27MGQSHTHAGGF",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-indiana-library-federation": {
+    "path": "organizations/org-indiana-library-federation.webp",
+    "sourcePage": "https://www.ilfonline.org/",
+    "assetUrl": "https://www.ilfonline.org/assets/site/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-indiana-municipal-management-association-imma": {
+    "path": "organizations/org-indiana-municipal-management-association-imma.png",
+    "sourcePage": "https://aimindiana.org/imma/",
+    "assetUrl": "https://aimindiana.org/wp-content/uploads/2022/03/22AffilliateGroup-IMMA.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-indiana-state-university": {
+    "path": "organizations/org-indiana-state-university.svg",
+    "sourcePage": "https://www.indianastate.edu/",
+    "assetUrl": "https://www.indianastate.edu/#official-inline-svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Official header SVG copied unchanged from source HTML."
+  },
+  "org-indiana-township-association-ita": {
+    "path": "organizations/org-indiana-township-association-ita.png",
+    "sourcePage": "https://www.ita-in.org/",
+    "assetUrl": "https://www.ita-in.org/logos/Association2009/website/2009_2009_ITA_LinkedIn_Banner_1140px_optimized.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo manually selected from the organization header."
+  },
+  "org-indy-chamber": {
+    "path": "organizations/org-indy-chamber.png",
+    "sourcePage": "https://indychamber.com/",
+    "assetUrl": "https://indychamber.com/wp-content/themes/indychamber/assets/images/indy-chamber-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-lake-station-parks": {
+    "path": "organizations/org-lake-station-parks.avif",
+    "sourcePage": "https://www.lakestation-in.gov/",
+    "assetUrl": "https://static.wixstatic.com/media/0c984f_f089fa51cf0b4b5881ed46c113fb5abf~mv2.png/v1/fill/w_115,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LakeStation_CitySeal_Logo_PRIM_4C_edited.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "City of Lake Station municipal seal, used as a parent-organization mark for its Parks department."
+  },
+  "org-lockport-chamber-of-commerce": {
+    "path": "organizations/org-lockport-chamber-of-commerce.png",
+    "sourcePage": "https://www.lockportchamber.com/",
+    "assetUrl": "https://static.wixstatic.com/media/f2058a_01a3b09a323d4e55b2407e27de6620d0~mv2.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-lockport-fire-foundation": {
+    "path": "organizations/org-lockport-fire-foundation.png",
+    "sourcePage": "https://www.lockportfire.org/fire-foundation",
+    "assetUrl": "https://static.wixstatic.com/media/a15681_f7ef1fa5fec0421b9fb717ca23b4f4b7%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/a15681_f7ef1fa5fec0421b9fb717ca23b4f4b7%7Emv2.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Lockport Township Fire Protection District official icon; the district site confirms its Fire Foundation."
+  },
+  "org-mabas-mutual-aid-box-alarm-system": {
+    "path": "organizations/org-mabas-mutual-aid-box-alarm-system.svg",
+    "sourcePage": "https://www.mabas-il.org/",
+    "assetUrl": "https://www.mabas-il.org/wp-content/uploads/2021/01/logo.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-mappa": {
+    "path": "organizations/org-mappa.png",
+    "sourcePage": "https://mappa.appa.org/",
+    "assetUrl": "https://mappa.appa.org/wp-content/uploads/2025/03/MAPPALogo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-matteson-police-department": {
+    "path": "organizations/org-matteson-police-department.png",
+    "sourcePage": "https://www.villageofmatteson.org/",
+    "assetUrl": "https://cms7files.revize.com/mattesonil/_assets_/images/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Village of Matteson municipal mark; parent-organization fallback for Police Department."
+  },
+  "org-mclean-county-chamber-of-commerce": {
+    "path": "organizations/org-mclean-county-chamber-of-commerce.png",
+    "sourcePage": "https://www.mcleancochamber.org/",
+    "assetUrl": "https://growthzonecmsprodeastus.azureedge.net/sites/2335/2024/07/125th-Logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-mclean-county-historical-society-gala": {
+    "path": "organizations/org-mclean-county-historical-society-gala.webp",
+    "sourcePage": "https://mchistory.org/",
+    "assetUrl": "https://mchistory.org/img/asset/YXNzZXRzL21jbWgtbG9nby5wbmc/mcmh-logo.png?w=626&h=148&fm=webp&s=cc145ae6f5a2e71da5ca93b2902af737",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "McLean County Museum of History mark represents the historical society; not a separate gala logo."
+  },
+  "org-metropolitan-fire-chiefs-association": {
+    "path": "organizations/org-metropolitan-fire-chiefs-association.png",
+    "sourcePage": "https://metrofirechiefs.org/",
+    "assetUrl": "https://metrofirechiefs.org/wp-content/uploads/2026/05/Metro-Fire-Chiefs-Association-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-michigan-association-of-fire-chiefs": {
+    "path": "organizations/org-michigan-association-of-fire-chiefs.png",
+    "sourcePage": "https://www.michiefs.org/",
+    "assetUrl": "https://cdn.wildapricot.com/275833/resources/MAFC/MLogos/MAFC-Logo_Master.png?version=1555795013000&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLndpbGRhcHJpY290LmNvbS8yNzU4MzMvcmVzb3VyY2VzL01BRkMvTUxvZ29zL01BRkMtTG9nb19NYXN0ZXIucG5nP3ZlcnNpb249MTU1NTc5NTAxMzAwMCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5MjcxNjE3N30sIklwQWRkcmVzcyI6eyJBV1M6U291cmNlSXAiOiIwLjAuMC4wLzAifX19XX0_&Signature=YbzZ9RzbRaW24DuQkYmGsuzxT7IVWIqqUW06WvsLnEW7-SjMBu0E3DiI3sduffy8oWnnAYrVobiOWDVdu0l5eHjgpb5FlYFbsL5cv7fcoFEBy5pigTl7iGiRMoL1KkKQlg9Wja34ErxD43liw0S9ty1Yqm4lrj~zwAXUD7jU0g5cE5N0Y8IX35yt-KcSRcOHFjEU0tkgYePkDRrLDq2Mj65LPDMxVdMqwYmpMeuKjt7Iae1fa4YMUgyQ58Bd6ca8N~5od~~id56Eo~jOkEWMKlmHp0tQQGG4mft2ZqOhrrq4sD2ioTjQvViwczIK2sENsmkcWdx9m0at-gM2K3ZjkQ__&Key-Pair-Id=K27MGQSHTHAGGF",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-midwest-security-police-conference-and-expo": {
+    "path": "organizations/org-midwest-security-police-conference-and-expo.png",
+    "sourcePage": "https://mspce.com/",
+    "assetUrl": "https://mspce.com/wp-content/uploads/2020/10/MSPCE_logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-morton-chamber-of-commerce": {
+    "path": "organizations/org-morton-chamber-of-commerce.png",
+    "sourcePage": "https://www.mortonchamber.org/",
+    "assetUrl": "https://www.mortonchamber.org/uploads/1/5/5/0/155053266/morton-chamber-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-morton-united-fc": {
+    "path": "organizations/org-morton-united-fc.png",
+    "sourcePage": "https://mortonunitedfc.com/mortonunitedfc/",
+    "assetUrl": "https://cdn-app.teamlinkt.com/media/association_data/1384/site_data/images/MortonFC_Logo_Web.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-njcaa-championship": {
+    "path": "organizations/org-njcaa-championship.png",
+    "sourcePage": "https://www.njcaa.org/",
+    "assetUrl": "https://www.njcaa.org/media/7ecde19bd7-d7d922d2dd334eae9ad99567c91f492d-site-logo.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "National NJCAA mark only; the specific championship is unspecified."
+  },
+  "org-northeastern-illinois-university": {
+    "path": "organizations/org-northeastern-illinois-university.svg",
+    "sourcePage": "https://www.neiu.edu/",
+    "assetUrl": "https://www.neiu.edu/themes/custom/neiu/logo.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-northern-indiana-area-labor-federation": {
+    "path": "organizations/org-northern-indiana-area-labor-federation.webp",
+    "sourcePage": "https://inaflcio.org/northern-indiana-area-labor-federation/about-us",
+    "assetUrl": "https://inaflcio.org/sites/default/files/styles/logo/public/logos/nialf_logo_transparent.png.webp?itok=AQw4vyV5",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-northern-indiana-law-enforcement-academy-nilea": {
+    "path": "organizations/org-northern-indiana-law-enforcement-academy-nilea.png",
+    "sourcePage": "https://www.nilea.com/",
+    "assetUrl": "https://www.nilea.com/wp-content/themes/nilea-theme/images/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-northwest-indiana-building-construction-trades-council": {
+    "path": "organizations/org-northwest-indiana-building-construction-trades-council.jpg",
+    "sourcePage": "https://nwibuildingtrades.com/",
+    "assetUrl": "https://nwibuildingtrades.com/wp-content/uploads/2026/06/2026-04-NIBCTC-Logo-FINAL.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-northwest-indiana-business-roundtable": {
+    "path": "organizations/org-northwest-indiana-business-roundtable.webp",
+    "sourcePage": "https://www.nwibrt.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/695ebdddca808521aee62a92/c0ada006-524f-4162-a6ee-47c2ae7fefbe/NWIBRT_Logo_NoText.png?format=1500w",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-northwest-indiana-forum-nwi": {
+    "path": "organizations/org-northwest-indiana-forum-nwi.webp",
+    "sourcePage": "https://www.nwiforum.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/5a663f7e2aeba52c5cad3cbb/1520542424796-TYEU4ELB8C482HS33MHK/NWIForumLogo-CMYK_EDC-01.png?format=1500w",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-oak-ridge-sportsman-s-club": {
+    "path": "organizations/org-oak-ridge-sportsman-s-club.png",
+    "sourcePage": "https://oakridgeoutdoors.org/",
+    "assetUrl": "https://cdn-oakridgeoutdoors.awwwsome.cloud/wp-content/uploads/2024/02/oak-ridge-final-full-color.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-pathway-ministries": {
+    "path": "organizations/org-pathway-ministries.png",
+    "sourcePage": "https://pathwaypeoria.org/",
+    "assetUrl": "https://bunny-wp-pullzone-6bs3o3jmbf.b-cdn.net/wp-content/uploads/2023/12/pathway-horizontal.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-peoria-area-chamber-of-commerce": {
+    "path": "organizations/org-peoria-area-chamber-of-commerce.webp",
+    "sourcePage": "https://www.peoriachamber.org/",
+    "assetUrl": "https://www.peoriachamber.org/wp-content/uploads/2019/02/Peoria-Chamber-Logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-peoria-women-s-club": {
+    "path": "organizations/org-peoria-women-s-club.webp",
+    "sourcePage": "https://peoriawomensclub.com/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/5d822f01a59db35f2d15fa42/1605627843391-BCPMOEXYMPI239LCZZUD/PWClogo-white-transparent+copy.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-phoenix-community-development-services": {
+    "path": "organizations/org-phoenix-community-development-services.png",
+    "sourcePage": "https://www.phoenixcds.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/68ee994742b6ba6a82ad93a3/46037438-8b51-49f7-9aea-3431051670e8/Phoenix+Community+Development+Services+Logo",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-plymouth-fire-department": {
+    "path": "organizations/org-plymouth-fire-department.jpg",
+    "sourcePage": "https://www.plymouthin.com/",
+    "assetUrl": "https://www.plymouthin.com/images/footer/city-logo.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "City of Plymouth municipal mark; parent-organization fallback for Fire Department."
+  },
+  "org-portage-indiana-economic-development-council": {
+    "path": "organizations/org-portage-indiana-economic-development-council.png",
+    "sourcePage": "https://www.portagein.org/",
+    "assetUrl": "https://static.wixstatic.com/media/eaa6da_62a46a35178d41e9a97229274bfa269a~mv2.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-prairieland-adaptive": {
+    "path": "organizations/org-prairieland-adaptive.png",
+    "sourcePage": "https://www.prairielandadaptive.org/",
+    "assetUrl": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tqMBLKaLY4EFUaiAOBiM3Xha_aJr3NDLQDw6Uz41Yx46CKOovB2qF6WjG0XwDnbNYweAVcrzaHQWih4R_DudBPE1Ut2hred_AEI3uf9V0jxOmfcvRmr_g70L7WqVDZ5eVnF5vVNqOwgJf4lHrXHzz2qgb73unAFfbc7R58IeSI7A913qyIgBVbJJEUnAb6EMROBqPIhG9ndw4j8nYyy_Q",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-providence-life-services": {
+    "path": "organizations/org-providence-life-services.svg",
+    "sourcePage": "https://www.providencelifeservices.com/",
+    "assetUrl": "https://www.providencelifeservices.com/application/files/3517/5433/3637/logo-providence-life-services.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-purdue-university": {
+    "path": "organizations/org-purdue-university.svg",
+    "sourcePage": "https://www.purdue.edu/",
+    "assetUrl": "https://www.purdue.edu/home/wp-content/themes/purdue-home-theme-beta/imgs/PU-V.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-rebuilding-together-peoria": {
+    "path": "organizations/org-rebuilding-together-peoria.jpg",
+    "sourcePage": "https://rebuildingtogetherpeoriail.com/",
+    "assetUrl": "https://rebuildingtogetherpeoriail.com/wp-content/uploads/2023/08/cropped-logo2.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-snyder-village": {
+    "path": "organizations/org-snyder-village.jpg",
+    "sourcePage": "https://www.snydervillage.com/",
+    "assetUrl": "https://www.snydervillage.com/wp-content/uploads/2023/05/Snyder-Logo-New-1024x167.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-south-suburban-association-chiefs-of-police": {
+    "path": "organizations/org-south-suburban-association-chiefs-of-police.webp",
+    "sourcePage": "https://ssacop.com/",
+    "assetUrl": "https://i0.wp.com/ssacop.com/wp-content/uploads/2025/05/cropped-SSACOP-Logo-e1748434620585.jpg?fit=100%2C86&ssl=1",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-south-suburban-college": {
+    "path": "organizations/org-south-suburban-college.png",
+    "sourcePage": "https://www.ssc.edu/",
+    "assetUrl": "https://www.ssc.edu/wp-content/uploads/2021/12/shield-e1670276964544.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-south-suburban-mayors-managers-association": {
+    "path": "organizations/org-south-suburban-mayors-managers-association.avif",
+    "sourcePage": "https://www.ssmma.org/",
+    "assetUrl": "https://static.wixstatic.com/media/0e8004_d8a886dd19784d99919686ad821141ef~mv2.png/v1/fill/w_260,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ssmma-logo-white.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-southern-illinois-university-school-of-medicine": {
+    "path": "organizations/org-southern-illinois-university-school-of-medicine.png",
+    "sourcePage": "https://www.siumed.edu/",
+    "assetUrl": "https://www.siumed.edu/themes/custom/siu/images/Logo_edu.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-st-jude-childrens-research-hospital": {
+    "path": "organizations/org-st-jude-childrens-research-hospital.svg",
+    "sourcePage": "https://www.stjude.org/",
+    "assetUrl": "https://www.stjude.org/#official-inline-svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official header SVG copied unchanged from source HTML."
+  },
+  "org-station-design-conference": {
+    "path": "organizations/org-station-design-conference.png",
+    "sourcePage": "https://www.fhstationdesign.com/2026/",
+    "assetUrl": "https://assets.swoogo.com/uploads/medium/1410296-61686795c3032.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo manually selected from the organization header."
+  },
+  "org-taps-no-kill-animal-shelter": {
+    "path": "organizations/org-taps-no-kill-animal-shelter.webp",
+    "sourcePage": "https://tapsshelter.org/",
+    "assetUrl": "https://tapsshelter.org/wp-content/uploads/2022/02/logo2.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-tazewell-county-resource-center-tcrc": {
+    "path": "organizations/org-tazewell-county-resource-center-tcrc.png",
+    "sourcePage": "https://tcrcorg.com/",
+    "assetUrl": "https://tcrcorg.com/wp-content/uploads/2021/11/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-the-salvation-army": {
+    "path": "organizations/org-the-salvation-army.svg",
+    "sourcePage": "https://www.salvationarmyusa.org/",
+    "assetUrl": "https://8hxvw8tw.media.zestyio.com/shield-1.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-the-town-of-merrillville": {
+    "path": "organizations/org-the-town-of-merrillville.svg",
+    "sourcePage": "https://www.merrillville.in.gov/",
+    "assetUrl": "https://media-002-us.cdn.govstack.com/merrillville-us/media/45zncqvj/mvillesealtransparent.svg",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-town-of-st-john": {
+    "path": "organizations/org-town-of-st-john.png",
+    "sourcePage": "https://stjohnin.gov/",
+    "assetUrl": "https://stjohnin.gov/wp-content/uploads/2024/03/stj.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-urban-league-of-northwest-indiana": {
+    "path": "organizations/org-urban-league-of-northwest-indiana.png",
+    "sourcePage": "https://ulofnwi.org/",
+    "assetUrl": "https://ulofnwi.org/wp-content/uploads/2021/06/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-urbana-park-district": {
+    "path": "organizations/org-urbana-park-district.png",
+    "sourcePage": "https://www.urbanaparks.org/",
+    "assetUrl": "https://www.urbanaparks.org/images/favicon.png",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Only the official website icon was usable; this is an icon fallback rather than a full logo."
+  },
+  "org-us-minority-contractors-association-usmca": {
+    "path": "organizations/org-us-minority-contractors-association-usmca.png",
+    "sourcePage": "https://usminoritycontractors.org/",
+    "assetUrl": "https://usminoritycontractors.org/sites/usmca/images/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-village-of-hazel-crest": {
+    "path": "organizations/org-village-of-hazel-crest.png",
+    "sourcePage": "https://www.villageofhazelcrest.org/",
+    "assetUrl": "https://cms1files.revize.com/hazelcrest/_assets_/images/logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-waukegan-police-department": {
+    "path": "organizations/org-waukegan-police-department.jpg",
+    "sourcePage": "https://www.waukeganil.gov/110/Tax-Increment-Financing",
+    "assetUrl": "https://www.waukeganil.gov/ImageRepository/Document?documentID=8888",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "City of Waukegan municipal mark on official Police page; parent-organization fallback."
+  },
+  "org-west-central-illinois-building-construction-trades-council": {
+    "path": "organizations/org-west-central-illinois-building-construction-trades-council.jpg",
+    "sourcePage": "https://westcentralbtc.org/",
+    "assetUrl": "https://westcentralbtc.org/wp-content/uploads/2018/08/West-Central-Building-Construction-Trade-Council-Logo.jpg",
+    "kind": "downloaded_logo",
+    "identityScope": "parent_or_program",
+    "requiresDarkBackground": false,
+    "note": "Building and Construction Trades Department AFL-CIO emblem used on official West Central Illinois council website; umbrella-trades mark."
+  },
+  "org-wglt-normal": {
+    "path": "organizations/org-wglt-normal.png",
+    "sourcePage": "https://www.wglt.org/",
+    "assetUrl": "https://npr.brightspotcdn.com/dims4/default/d6b7c6e/2147483647/strip/true/crop/1500x264+0+0/resize/267x47!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0b%2Fa2%2Fdeeb778040dea6bafecd95765a59%2Fwglt-bn-logo-npr-network-logo.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-whiting-roberstdale-chamber-of-commerce": {
+    "path": "organizations/org-whiting-roberstdale-chamber-of-commerce.webp",
+    "sourcePage": "https://www.wrchamber.com/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/5af465ccda02bc6c002bb385/1528988377737-KA49XJHH607Z58PH2JKQ/Chamber+Logo-WHITE.png?format=1500w",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-will-county-fire-chiefs-association": {
+    "path": "organizations/org-will-county-fire-chiefs-association.avif",
+    "sourcePage": "https://www.willcountyfca.org/",
+    "assetUrl": "https://static.wixstatic.com/media/a15681_a73a4efe1d144c2897226f46786bd97b~mv2.png/v1/fill/w_85,h_84,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WCFCA%20Logo_PNG.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Logo image linked from the matching official website."
+  },
+  "org-yard-goat-travel-baseball": {
+    "path": "organizations/org-yard-goat-travel-baseball.png",
+    "sourcePage": "https://www.theyardgoats.com/",
+    "assetUrl": "https://cdn2.sportngin.com/attachments/logo_graphic/ecce-210918805/Yard_Goats_Icon_medium.png",
+    "kind": "downloaded_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official logo selected from the organization website after manual identity review."
+  },
+  "org-young-life": {
+    "path": "organizations/org-young-life.png",
+    "sourcePage": "https://www.younglife.org/",
+    "assetUrl": "https://d16bl9hbknyxy0.cloudfront.net/846b4004-7989-4e48-9cf3-aa3dca341f35/7bcd3abe-3d42-41a0-b9dd-ef0f44028654/favicon_bluebox.png?w=32&h=32&fit=contain&format=png&Expires=9223372036854775&Signature=TF1ceZIp1GtpndgXcC-AhYkcMhpk2fW~4MSSGzpYE7ougsKZZEz2uaUIKEoX-wKsppgR4soBaO8VhW8dmJmF-xq7PCyNnq-fTlpHtszCKth1r3getUpJjQLmk4PGnns1EHuHbCn-lt60jvXh5zBYHuCr8K8koBkaKEtiY7nmHzpULwHsnr6cXPJEq16i6BeYDP6RpVyk~43m6PXJmseN1gcTz1S8yioayAdkZk1UmsQMWfepnkL285SF798Cp7qQtfSFk-noygrVUv4w8k7cXXQdTXIKnVmstavzwdSYE4Y7c9hJiRkARjQJWYeQ8yo5CuMm31IPX3WPVHZzAYt5Xw__&Key-Pair-Id=K2SKI2Y48Y62V1",
+    "kind": "official_icon_fallback",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Official website icon fallback."
+  },
+  "org-aasa-the-school-superintendents-association": {
+    "path": "organizations/org-aasa-the-school-superintendents-association.png",
+    "sourcePage": "https://www.aasa.org/",
+    "assetUrl": "https://www.aasa.org/images/default-source/about/aasalogothumbnailtan.png?sfvrsn=63c5ce74_1",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-aia-michigan": {
+    "path": "organizations/org-aia-michigan.png",
+    "sourcePage": "https://aiami.com/midsummerconference",
+    "assetUrl": "https://aiami.com/resources/Pictures/aia%20logos/AIA-Michigan_RED-BLACK_CMYK.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-arthritis-foundation": {
+    "path": "organizations/org-arthritis-foundation.png",
+    "sourcePage": "https://www.arthritis.org/",
+    "assetUrl": "https://www.arthritis.org/img/template-images/logo.jpg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-association-for-learning-environments": {
+    "path": "organizations/org-association-for-learning-environments.png",
+    "sourcePage": "https://www.a4le.org/",
+    "assetUrl": "https://www.a4le.org/images/A4LE/TopLevel/A4LE_logo_wh.png?version=7D3A9158",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-bartholomew-consolidated-school-corporation": {
+    "path": "organizations/org-bartholomew-consolidated-school-corporation.png",
+    "sourcePage": "https://www.bcscschools.org/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1725369181/bcscschoolsorg/nzt9kd1mpn8pmccwdioj/BCSC_Signature-Burgundy_1.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-basketball-museum-of-illinois": {
+    "path": "organizations/org-basketball-museum-of-illinois.png",
+    "sourcePage": "https://basketballmuseumofillinois.com/",
+    "assetUrl": "https://basketballmuseumofillinois.com/wp-content/uploads/2025/12/logo-header.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-bernardi-securities": {
+    "path": "organizations/org-bernardi-securities.png",
+    "sourcePage": "https://bernardisecurities.com/",
+    "assetUrl": "https://bernardisecurities.com/wp-content/uploads/2018/02/logo-original.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-bibich-elementary-school-pto": {
+    "path": "organizations/org-bibich-elementary-school-pto.png",
+    "sourcePage": "https://bibich.lcsc.us/pto/",
+    "assetUrl": "https://bibich.lcsc.us/wp-content/uploads/sites/6/2016/10/Bibichlogo.png",
+    "kind": "official_parent_logo",
+    "identityScope": "school",
+    "requiresDarkBackground": true,
+    "note": "Official Bibich Elementary school mascot. An independent PTO logo was not located; this is parent-school branding."
+  },
+  "org-brigham-elementary-school": {
+    "path": "organizations/org-brigham-elementary-school.png",
+    "sourcePage": "https://brigham.unit5.org/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1789675885/unit5org/fwim7pcdhiu8estfrnhe/logo.png",
+    "kind": "verified_logo",
+    "identityScope": "school",
+    "requiresDarkBackground": false,
+    "note": "Official Brigham mascot from the current Brigham Early Learning website."
+  },
+  "org-carroll-consolidated-school-corporation": {
+    "path": "organizations/org-carroll-consolidated-school-corporation.png",
+    "sourcePage": "https://www.carroll.k12.in.us/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/7949/logo/9218/Carroll_Consolidated_School_Corp_Logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-central-illinois-school-resources": {
+    "path": "organizations/org-central-illinois-school-resources.png",
+    "sourcePage": "https://www.cisrgroup.com/",
+    "assetUrl": "https://irp.cdn-website.com/21b27b69/dms3rep/multi/opt/CISR+Logo+-+transparent-1920w.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-children-s-discovery-museum-foundation": {
+    "path": "organizations/org-children-s-discovery-museum-foundation.png",
+    "sourcePage": "https://childrensdiscoverymuseum.net/",
+    "assetUrl": "https://childrensdiscoverymuseum.net/ImageRepository/Document?documentID=2958",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-cloverdale-community-dollars-for-scholars": {
+    "path": "organizations/org-cloverdale-community-dollars-for-scholars.jpg",
+    "sourcePage": "https://cloverdale.dollarsforscholars.org/",
+    "assetUrl": "https://cloverdale.dollarsforscholars.org/index.php?downloadFile=1&table=chapters_webContent&field=logo&check=ca623e87ad4e64050c57734786a92ccf&key=574",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-crown-point-christian-school": {
+    "path": "organizations/org-crown-point-christian-school.png",
+    "sourcePage": "https://www.crownpointchristian.org/",
+    "assetUrl": "https://static.wixstatic.com/media/cb5f65_ccdaac21f3fa4c17a50998dfcf2156f8~mv2.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-demotte-christian-schools": {
+    "path": "organizations/org-demotte-christian-schools.png",
+    "sourcePage": "https://www.demottechristianschools.org/",
+    "assetUrl": "https://www.demottechristianschools.org/editoruploads/images/Logos/logo_white.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-dunlap-cusd": {
+    "path": "organizations/org-dunlap-cusd.png",
+    "sourcePage": "https://www.dunlapcusd.net/",
+    "assetUrl": "https://cdnsm5-ss20.sharpschool.com/UserFiles/Servers/Server_2676762/Image/Theme/district-logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-dupage-illinois-asbo": {
+    "path": "organizations/org-dupage-illinois-asbo.png",
+    "sourcePage": "https://www.iasbop2p.org/iasbonew/professional-development/regional-orgs",
+    "assetUrl": "https://higherlogicdownload.s3.amazonaws.com/IASBO/dcc17975-daae-4bf8-8916-72f03c1c8ca2/UploadedImages/Website%20Images/Regional_Organizations/DuPage_RegionalOrg.png",
+    "kind": "verified_logo",
+    "identityScope": "regional_chapter",
+    "requiresDarkBackground": false,
+    "note": "Official DuPage regional organization graphic published in Illinois ASBO’s regional directory."
+  },
+  "org-elkhart-band-boosters": {
+    "path": "organizations/org-elkhart-band-boosters.png",
+    "sourcePage": "https://www.elkhart.k12.in.us/community/booster-clubs",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1754659863/elkhartk12inus/yclx4xkxuwpqb7fhkfzi/New-Elkhart-Logo.png",
+    "kind": "official_parent_logo",
+    "identityScope": "school_district",
+    "requiresDarkBackground": false,
+    "note": "Official Elkhart Community Schools logo. This identifies the school district, not a separately verified Band Boosters mark."
+  },
+  "org-greater-clark-schools-education-foundation": {
+    "path": "organizations/org-greater-clark-schools-education-foundation.png",
+    "sourcePage": "https://gccsfoundation.com/",
+    "assetUrl": "https://gccsfoundation.com/wp-content/uploads/2023/07/cropped-GCEF-2023-600x160-1-1.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": false,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-iaa-foundation": {
+    "path": "organizations/org-iaa-foundation.png",
+    "sourcePage": "https://www.iaafoundation.org/",
+    "assetUrl": "https://www.iaafoundation.org/media/tj0a1ibt/foundation_logo_180.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illiana-christian": {
+    "path": "organizations/org-illiana-christian.png",
+    "sourcePage": "https://www.illianachristian.org/",
+    "assetUrl": "https://www.illianachristian.org/wp-content/themes/christianschool/images/logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illini-bluffs-cusd-327": {
+    "path": "organizations/org-illini-bluffs-cusd-327.png",
+    "sourcePage": "https://www.illinibluffs.com/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/3881/logo/683/logo-fb8049f5cf13c9ac97f52988db98b542.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illinois-association-of-school-administrators-iasa": {
+    "path": "organizations/org-illinois-association-of-school-administrators-iasa.jpg",
+    "sourcePage": "https://www.iasaedu.org/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto/v1749577692/iasaeduorg/sowxrbkveov4m0b9eahc/IASAlogoTINYforwebc.jpg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illinois-association-of-school-boards-iasb": {
+    "path": "organizations/org-illinois-association-of-school-boards-iasb.png",
+    "sourcePage": "https://www.iasb.com/",
+    "assetUrl": "https://www.iasb.com/images/iasb-logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illinois-association-of-school-business-officials": {
+    "path": "organizations/org-illinois-association-of-school-business-officials.png",
+    "sourcePage": "https://www.iasbo.org/",
+    "assetUrl": "https://higherlogicdownload.s3.amazonaws.com/IASBO/14771369-c1b1-477e-87a8-5f813024a623/UploadedImages/Dev_Files/HLWDS-1024/footer-logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-illinois-joint-annual-conference-triple-i": {
+    "path": "organizations/org-illinois-joint-annual-conference-triple-i.webp",
+    "sourcePage": "https://www.iasb.com/conference/",
+    "assetUrl": "https://www.iasb.com/getContentAsset/3fbdfc8e-fed1-49ac-be35-05089613e9e2/e477a59e-1df6-4e2f-9986-20ab37342540/JAC_26_social_planner.webp?language=en-US",
+    "kind": "official_event_brand",
+    "identityScope": "event",
+    "requiresDarkBackground": false,
+    "note": "Official 2026 Joint Annual Conference artwork published by IASB; includes conference branding and schedule promotion, rather than a standalone organization logo."
+  },
+  "org-indiana-association-of-public-school-superintendents-iapss": {
+    "path": "organizations/org-indiana-association-of-public-school-superintendents-iapss.webp",
+    "sourcePage": "https://www.iapss-in.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/613f697d7610e57e372acb34/26e94ac9-b637-499a-95f4-ed10deb66881/Untitled+design.png?format=1500w",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-indiana-school-boards-association-isba": {
+    "path": "organizations/org-indiana-school-boards-association-isba.jpg",
+    "sourcePage": "https://www.isba-ind.org/",
+    "assetUrl": "https://www.isba-ind.org/images/default-source/default-album/isba-logo-new.jpg?sfvrsn=fcdec770_2",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-indiana-small-and-rural-schools-association": {
+    "path": "organizations/org-indiana-small-and-rural-schools-association.jpg",
+    "sourcePage": "https://www.indianasmallandrural.org/",
+    "assetUrl": "https://www.indianasmallandrural.org/wp-content/uploads/2014/01/Logo-isrsa1.jpg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-indiana-urban-schools-association": {
+    "path": "organizations/org-indiana-urban-schools-association.jpg",
+    "sourcePage": "https://www.inurbanschools.org/",
+    "assetUrl": "https://www.inurbanschools.org/wp-content/uploads/2021/04/iusa-logo.jpg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-indianapolis-public-schools": {
+    "path": "organizations/org-indianapolis-public-schools.svg",
+    "sourcePage": "https://myips.org/",
+    "assetUrl": "https://resources.finalsite.net/images/v1746690185/myipsorg/mhpzix0rpkf9jay27p6j/district-header-logo.svg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-isba-iapss-fall-conference": {
+    "path": "organizations/org-isba-iapss-fall-conference.webp",
+    "sourcePage": "https://www.iapss-in.org/",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/613f697d7610e57e372acb34/a1a0ad90-dcd1-48ba-9e7b-05a69cb63efa/Fall+Conference+.png",
+    "kind": "official_event_brand",
+    "identityScope": "event",
+    "requiresDarkBackground": false,
+    "note": "Official 2026 ISBA/IAPSS Fall Conference artwork from IAPSS; includes the conference theme, date and cohost brands."
+  },
+  "org-lake-central-schools": {
+    "path": "organizations/org-lake-central-schools.png",
+    "sourcePage": "https://lakecentralef.org/",
+    "assetUrl": "https://lakecentralef.org/wp-content/uploads/2022/04/lakecentral-removebg-small.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": false,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-lake-ridge-new-tech-schools": {
+    "path": "organizations/org-lake-ridge-new-tech-schools.png",
+    "sourcePage": "https://www.lakeridge.k12.in.us/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/29452/logo/32265/LRS_Logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-lawrence-township-schools": {
+    "path": "organizations/org-lawrence-township-schools.png",
+    "sourcePage": "https://msdltf.org/",
+    "assetUrl": "https://cdn.firespring.com/images/b9e3dff4-adab-4150-843a-5a9c352f7b40.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": false,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-limestone-high-school": {
+    "path": "organizations/org-limestone-high-school.png",
+    "sourcePage": "https://www.limestone310.org/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/5985/logo/7077/limestone-logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-mahomet-seymour-schools": {
+    "path": "organizations/org-mahomet-seymour-schools.png",
+    "sourcePage": "https://www.ms.k12.il.us/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1770144963/msk12ilus4/c53qb9ue6c8ldpv6dqw6/districtlogo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-mclean-county-unit-5-schools": {
+    "path": "organizations/org-mclean-county-unit-5-schools.png",
+    "sourcePage": "https://www.unit5.org/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto/v1692293307/unit5org/hhjuhf2uoyzx9onsjpwl/AngiesLogoTest.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-metamora-township-high-school": {
+    "path": "organizations/org-metamora-township-high-school.png",
+    "sourcePage": "https://www.mths.us/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/11846/logo/13247/Redbirdleft.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-michigan-association-of-school-boards": {
+    "path": "organizations/org-michigan-association-of-school-boards.svg",
+    "sourcePage": "https://www.masb.org/",
+    "assetUrl": "https://www.masb.org/ResourcePackages/masb/assets/img/MASB-logo-hor.svg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-michigan-association-of-superintendents-administrators": {
+    "path": "organizations/org-michigan-association-of-superintendents-administrators.png",
+    "sourcePage": "https://gomasa.org/",
+    "assetUrl": "https://gomasa.org/wp-content/uploads/WebsiteHeader2021_060221.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-michigan-school-business-officials": {
+    "path": "organizations/org-michigan-school-business-officials.png",
+    "sourcePage": "https://www.msbo.org/2026-ac-exhibitor-sponsorship-packet/",
+    "assetUrl": "https://www.msbo.org/wp-content/uploads/2020/04/msbo_logo_header.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-morris-district-54": {
+    "path": "organizations/org-morris-district-54.png",
+    "sourcePage": "https://www.morris54.org/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/1405/logo/1388/Morris.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-morton-junior-high-school": {
+    "path": "organizations/org-morton-junior-high-school.png",
+    "sourcePage": "https://mjhs.morton709.org/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/33463/logo/36599/Morton-Junior_logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-mount-pulaski-schools": {
+    "path": "organizations/org-mount-pulaski-schools.png",
+    "sourcePage": "https://www.mtpulaski.k12.il.us/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/4287/logo/3644/mt_pulaski_logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-muncie-community-schools-community-engagement-council": {
+    "path": "organizations/org-muncie-community-schools-community-engagement-council.png",
+    "sourcePage": "https://www.muncie.k12.in.us/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1663957784/munciek12inus/nhub5lur06rhwxd1hsau/MCS_Logo_Color_Reversed_Horiz.png",
+    "kind": "official_parent_logo",
+    "identityScope": "school_district",
+    "requiresDarkBackground": false,
+    "note": "Official Muncie Community Schools logo. No separate Community Engagement Council logo was located."
+  },
+  "org-munster-band-backers": {
+    "path": "organizations/org-munster-band-backers.png",
+    "sourcePage": "https://www.munsterbands.org/",
+    "assetUrl": "https://munsterbands.org/wp-content/uploads/2025/08/munster-bands-logo_final_Bands-Color-Horz.png",
+    "kind": "official_parent_logo",
+    "identityScope": "band_program",
+    "requiresDarkBackground": false,
+    "note": "Official Munster Bands logo from the site associated with Munster Band Backers; identifies the band program."
+  },
+  "org-new-albany-floyd-county-schools": {
+    "path": "organizations/org-new-albany-floyd-county-schools.png",
+    "sourcePage": "https://www.nafcedfoundation.org/",
+    "assetUrl": "https://www.nafcedfoundation.org/wp-content/uploads/2019/08/NAFCed-logo2.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": false,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-new-berlin-sports-boosters": {
+    "path": "organizations/org-new-berlin-sports-boosters.png",
+    "sourcePage": "https://www.newberlinpretzels.com/",
+    "assetUrl": "https://assets-rst7.rschooltoday.com/rst7files/uploads/sites/902/2026/05/13761.png",
+    "kind": "official_parent_logo",
+    "identityScope": "school_athletics",
+    "requiresDarkBackground": false,
+    "note": "Official New Berlin Pretzels athletics mascot; a separate Sports Boosters logo was not located."
+  },
+  "org-new-washington-middle-high-school": {
+    "path": "organizations/org-new-washington-middle-high-school.png",
+    "sourcePage": "https://nwmhs.gccschools.com/",
+    "assetUrl": "https://nwmhs.gccschools.com/wp-content/uploads/2024/11/cropped-NWMHS_3-1.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-noblesville-schools-education-foundation": {
+    "path": "organizations/org-noblesville-schools-education-foundation.png",
+    "sourcePage": "https://www.noblesvilleschoolseducationfoundation.org/",
+    "assetUrl": "https://www.noblesvilleschoolseducationfoundation.org/wp-content/uploads/2021/08/NSEF-logo2.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-northern-indiana-educational-services-center": {
+    "path": "organizations/org-northern-indiana-educational-services-center.png",
+    "sourcePage": "https://www.niesc.org/",
+    "assetUrl": "https://files.smartsites.parentsquare.com/11210/header_logo_img_vcekkektnd2u0cngedg.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-peoria-promise-foundation": {
+    "path": "organizations/org-peoria-promise-foundation.png",
+    "sourcePage": "https://www.peoriapromise.org/",
+    "assetUrl": "https://www.peoriapromise.org/images/logo2.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-peoria-public-schools": {
+    "path": "organizations/org-peoria-public-schools.png",
+    "sourcePage": "https://ppsfoundation.org/",
+    "assetUrl": "https://ppsfoundation.org/wp-content/uploads/2023/03/Asset-2.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": false,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-pike-township-education-foundation": {
+    "path": "organizations/org-pike-township-education-foundation.png",
+    "sourcePage": "https://pike-ef.org/",
+    "assetUrl": "https://pike-ef.org/wp-content/uploads/2019/08/ptef-logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-pontiac-district-90": {
+    "path": "organizations/org-pontiac-district-90.png",
+    "sourcePage": "https://www.pontiac90.org/",
+    "assetUrl": "https://files.smartsites.parentsquare.com/13432/header_logo_img_ju33bkbp3hqa9ifnnil.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-regional-office-of-education-35": {
+    "path": "organizations/org-regional-office-of-education-35.png",
+    "sourcePage": "https://www.roe35.org/",
+    "assetUrl": "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1671628816/roe35org/tpbr3uhoi7k5i4c1jyc3/roe-35-logo-2022-master.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-regional-office-of-education-50-st-clair-county": {
+    "path": "organizations/org-regional-office-of-education-50-st-clair-county.png",
+    "sourcePage": "https://www.sccroe50.org/",
+    "assetUrl": "https://sccroe50.org/wp-content/uploads/2021/07/logo-final.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-stark-county-schools": {
+    "path": "organizations/org-stark-county-schools.png",
+    "sourcePage": "https://stark100.schoolinsites.com/",
+    "assetUrl": "https://content.schoolinsites.com/api/documents/062ce84842e0438b8b2c53700b7a10ee.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-tremont-cusd-702": {
+    "path": "organizations/org-tremont-cusd-702.png",
+    "sourcePage": "https://www.tremont702.net/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/1070/logo/3552/district_logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-utica-elementary-school": {
+    "path": "organizations/org-utica-elementary-school.jpg",
+    "sourcePage": "https://ues.gccschools.com/",
+    "assetUrl": "https://i0.wp.com/ues.gccschools.com/wp-content/uploads/2020/11/Utica_Elementary_Jets-UE-letter-mark-1-scaled.jpg?fit=2560%2C1754&ssl=1",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-veridus-group": {
+    "path": "organizations/org-veridus-group.svg",
+    "sourcePage": "https://theveridusgroup.com/",
+    "assetUrl": "https://theveridusgroup.com/wp-content/uploads/2024/10/Veridus_RGB_Veridus-Group-White.svg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": true,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-vincennes-education-foundation": {
+    "path": "organizations/org-vincennes-education-foundation.png",
+    "sourcePage": "https://www.vcsc.k12.in.us/page/vincenneseducationfoundation",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/19159/file/4974108/0a14182e-77a2-440f-9602-81be1ae884ea.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-washington-high-school": {
+    "path": "organizations/org-washington-high-school.png",
+    "sourcePage": "https://www.wacohi.net/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/8150/logo/9513/Washington_CHSD_308_webv2logo_template_300.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-west-central-indiana-educational-service-center": {
+    "path": "organizations/org-west-central-indiana-educational-service-center.png",
+    "sourcePage": "https://www.wciesc.k12.in.us/",
+    "assetUrl": "https://static.wixstatic.com/media/53f965_a4186e38e4d94c19a864dda6b836cf89~mv2.jpeg/v1/fill/w_263,h_261,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/West%20Central%20Logo%20(1).jpeg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-west-side-chamber-of-commerce": {
+    "path": "organizations/org-west-side-chamber-of-commerce.jpg",
+    "sourcePage": "https://westsidechamber.biz/",
+    "assetUrl": "https://westsidechamber.biz/wp-content/uploads/2020/01/logo.jpg",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-westfield-chamber-of-commerce": {
+    "path": "organizations/org-westfield-chamber-of-commerce.png",
+    "sourcePage": "https://www.westfieldchamberindy.com/",
+    "assetUrl": "https://growthzonecmsprodeastus.azureedge.net/sites/1462/2017/09/WCC-logo-1024x768.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  },
+  "org-westfield-washington-schools": {
+    "path": "organizations/org-westfield-washington-schools.png",
+    "sourcePage": "https://www.wwswef.org/",
+    "assetUrl": "https://static.wixstatic.com/media/5a0916_656d84466d194e82a7c6fc73b31a2e9d~mv2.png/v1/fill/w_272,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WEF-primary-logo-white.png",
+    "kind": "verified_logo",
+    "identityScope": "foundation_program",
+    "requiresDarkBackground": true,
+    "note": "Official education foundation logo associated with the school district; identifies the foundation program."
+  },
+  "org-whiting-high-school": {
+    "path": "organizations/org-whiting-high-school.png",
+    "sourcePage": "https://www.whiting.k12.in.us/",
+    "assetUrl": "https://cmsv2-assets.apptegy.net/uploads/4321/logo/6534/logo-whitning.png",
+    "kind": "official_parent_logo",
+    "identityScope": "school_district",
+    "requiresDarkBackground": false,
+    "note": "Official Whiting schools Oilers mascot shared with the high school."
+  },
+  "org-yorktown-community-schools": {
+    "path": "organizations/org-yorktown-community-schools.png",
+    "sourcePage": "https://www.yorktown.k12.in.us/",
+    "assetUrl": "https://www.yorktown.k12.in.us/pics/header_logo.png",
+    "kind": "verified_logo",
+    "identityScope": "organization",
+    "requiresDarkBackground": false,
+    "note": "Visually verified logo or mascot served on the official organization website."
+  }
+}
