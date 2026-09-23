@@ -8,4 +8,6 @@
 - Organization identities have logo research entries; verified assets are packaged and unresolved identities use initials with documented gaps. White transparent marks use a dark backdrop.
 - The separately supplied private import file preserves its organization, expense, and benefit data.
 
-No remote Supabase project or GitHub deployment was created. Hosted invitations, SMTP, recovery callbacks, and real simultaneous browser sessions must be checked once the shared project is configured. PGlite tests simulate stale clients sequentially; they are not a multi-session hosted test.
+The shared Supabase project is configured. Its Auth endpoint responds successfully, email sign-in is enabled, public and anonymous signup are disabled, and signed-out workspace requests are denied without returning data. The owner confirmed saving the GitHub Pages site and redirect URLs in Supabase.
+
+Hosted invitations, SMTP, recovery callbacks, and real simultaneous browser sessions still require user verification. PGlite tests simulate stale clients sequentially; they are not a multi-session hosted test.
