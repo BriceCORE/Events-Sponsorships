@@ -21,4 +21,6 @@ The shared Supabase project is configured. Its Auth endpoint responds successful
 
 The GitHub discovery secret is configured and the scheduler is active. A live forced run on September 23 saved five review items; its partial result reported three source/coverage issues across eight page attempts. The owner confirmed results appeared in the app. AASA's dedicated conference site works with the worker; its main site requests a 120-second crawl delay that this bounded worker skips.
 
+A later September 23 request remained queued for hours. GitHub reported the workflow active on the correct default branch but had no scheduled-run records. Manually starting run `35921132746` processed the existing app request and saved a partial result: 34 page attempts, 20 candidates, and eight source/coverage issues. The worker's `queue: processed` result confirms the live request/claim/completion connection. Candidate counts can include already known findings. The schedule was updated to equivalent explicit five-minute values as a recovery attempt; successful manual processing alone does not verify automatic scheduling.
+
 Hosted invitations, SMTP, recovery callbacks, and real simultaneous browser sessions still require user verification. PGlite tests simulate stale clients sequentially; they are not a multi-session hosted test.

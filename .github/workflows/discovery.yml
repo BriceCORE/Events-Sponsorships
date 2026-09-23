@@ -3,7 +3,7 @@ name: Discover conferences for review
 on:
   schedule:
     # Poll for in-app requests; otherwise crawl only when the 14-day due date arrives.
-    - cron: '2-59/5 * * * *'
+    - cron: '3,8,13,18,23,28,33,38,43,48,53,58 * * * *'
   workflow_dispatch:
     inputs:
       force:
